@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Lacquer&display=swap');
+
+* {
+    padding: 0;
+}
+
+#logo {
+    width: 130px;
+    position: absolute;
+    left: 40px;
+    top: 25px;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: rgb(57, 31, 150);
+}
+
+header {
+    text-align: center;
+    background-color: black;
+    height: 160px;
+    padding: 10px;
+    margin-top: -10px;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+header a:link {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    font-family: fantasy;
+    font-size: larger;
+    font-style: normal;
+    font-weight: inherit;
+    text-decoration: none;
+}
+
+header a:visited {
+    color: white;
+}
+
+header a:hover {
+    background-color: grey;
+}
+
+h1 {
+    font-family: "Lacquer";
+    color: red;
+    font-size: 60px;
+    letter-spacing: 1px;
+    margin-bottom: 40px;
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+
+h2 {
+    color: #06e5c2;
+    font-size: 25px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+p {
+    color: white;
+    font-size: 15px;
+    font-style: italic;
+}
+
+ul {
+    color: white;
+    margin-left: 20px;
+}
+
+footer {
+    color: white;
+    font-size: 10px;
+    position: relative;
+    top: 15px;
+}
+
+table {
+    width: 280px;
+    position: relative;
+    left: 300px;
+    bottom: 90px;
+    background-color: wheat;
+    border-radius: 5px;
+}
+
+table th {
+    position: relative;
+    left: 30px;
+    border-bottom: 5px solid wheat;
+}
+
+table td {
+    border-bottom: 3px solid wheat;
+}
+
+#carne {
+    position: absolute;
+    left: 1250px;
+    top: 200px;
+    width: 240px;
+}
+
+#massa {
+    position: absolute;
+    left: 950px;
+    top: 325px;
+    width: 240px;
+}
+
+#salada {
+    position: absolute;
+    left: 1250px;
+    top: 450px;
+    width: 240px;
+}
