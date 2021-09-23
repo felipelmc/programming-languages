@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Lacquer&display=swap');
+
+$laranja: rgb(255, 145, 0);
+$laranja-claro: #ff91005b;
+$azul: #19c6cc;
+
+body {
+    background-color: $laranja-claro;
+}
+
+header {  
+    text-align: center;
+    background-color: $laranja;
+    height: 160px;
+    padding: 10px;
+    margin-top: -10px;
+    margin-left: -10px;
+    margin-right: -10px;
+
+    a:link {
+        background-color: $laranja;
+        color: white;
+        padding: 10px;
+        font-family: fantasy;
+        font-size: larger;
+        font-style: normal;
+        font-weight: inherit;
+        text-decoration: none;
+    }
+
+    a:visited {
+        color: white;
+    }
+
+    a:hover {
+        background-color: $azul;
+        border-radius: 50px;
+    }
+
+    h1 {
+        font-family: "Lacquer";
+        color: $azul;
+        font-size: 60px;
+        letter-spacing: 1px;
+        margin-bottom: 40px;
+        margin-top: 20px;
+        text-transform: uppercase;
+    }
+}
+
+h1 {
+    color: $azul;
+}
+
+p {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+    color: $laranja;
+}

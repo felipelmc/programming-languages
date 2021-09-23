@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Lacquer&display=swap");
+body {
+  background-color: #ff91005b;
+}
+
+header {
+  text-align: center;
+  background-color: #ff9100;
+  height: 160px;
+  padding: 10px;
+  margin-top: -10px;
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+header a:link {
+  background-color: #ff9100;
+  color: white;
+  padding: 10px;
+  font-family: fantasy;
+  font-size: larger;
+  font-style: normal;
+  font-weight: inherit;
+  text-decoration: none;
+}
+
+header a:visited {
+  color: white;
+}
+
+header a:hover {
+  background-color: #19c6cc;
+  border-radius: 50px;
+}
+
+header h1 {
+  font-family: "Lacquer";
+  color: #19c6cc;
+  font-size: 60px;
+  letter-spacing: 1px;
+  margin-bottom: 40px;
+  margin-top: 20px;
+  text-transform: uppercase;
+}
+
+h1 {
+  color: #19c6cc;
+}
+
+p {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 20px;
+  color: #ff9100;
+}
+/*# sourceMappingURL=custom.css.map */
