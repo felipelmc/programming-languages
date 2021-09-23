@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Lacquer&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Stick+No+Bills:wght@300&display=swap");
+body {
+  background-color: #ff91005b;
+}
+
+header {
+  text-align: center;
+  background-color: #f27649;
+  height: 180px;
+  padding: 10px;
+  margin-top: -10px;
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+header a:link {
+  background-color: #f27649;
+  color: white;
+  padding: 10px;
+  font-family: fantasy;
+  font-size: larger;
+  font-style: normal;
+  font-weight: inherit;
+  text-decoration: none;
+  border-radius: 50px;
+}
+
+header a:visited {
+  color: white;
+}
+
+header a:hover {
+  background-color: #426CB4;
+}
+
+header h1 {
+  font-family: "Stick No Bills";
+  color: #426CB4;
+  font-size: 60px;
+  letter-spacing: 1px;
+  margin-bottom: 40px;
+  margin-top: 20px;
+  text-transform: uppercase;
+}
+
+header .cadastro {
+  position: absolute;
+  left: 1300px;
+  top: 20px;
+  background-color: green;
+}
+
+header .cadastro:hover {
+  background-color: lightgreen;
+}
+
+header #registro {
+  position: absolute;
+  left: 1300px;
+  top: 20px;
+  background-color: green;
+}
+
+header #registro:hover {
+  background-color: lightgreen;
+}
+
+header #login {
+  position: absolute;
+  left: 1400px;
+  top: 20px;
+  background-color: green;
+}
+
+header #login:hover {
+  background-color: lightgreen;
+}
+
+h1 {
+  color: #426CB4;
+}
+
+p {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 20px;
+  color: #f27649;
+}
+
+table {
+  background-color: #25c0c580;
+  width: 1530px;
+}
+
+tr {
+  text-align: center;
+}
+
+tr.primeiro {
+  background-color: gold;
+}
+
+tr.segundo {
+  background-color: silver;
+}
+
+tr.terceiro {
+  background-color: #8d6f37;
+}
+/*# sourceMappingURL=custom.css.map */

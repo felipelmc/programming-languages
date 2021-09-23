@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Lacquer&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Stick+No+Bills:wght@300&display=swap');
+
+$laranja: #f27649;
+$laranja-claro: #ff91005b;
+$azul-claro: #25c0c580;
+$azul: #426CB4;
+$azul-escuro: #3F3464;
+$bronze: #8d6f37;
+
+body {
+    background-color: $laranja-claro;
+}
+
+header {  
+    text-align: center;
+    background-color: $laranja;
+    height: 180px;
+    padding: 10px;
+    margin-top: -10px;
+    margin-left: -10px;
+    margin-right: -10px;
+
+    a:link {
+        background-color: $laranja;
+        color: white;
+        padding: 10px;
+        font-family: fantasy;
+        font-size: larger;
+        font-style: normal;
+        font-weight: inherit;
+        text-decoration: none;
+        border-radius: 50px;
+    }
+
+    a:visited {
+        color: white;
+    }
+
+    a:hover {
+        background-color: $azul;
+    }
+
+    h1 {
+        font-family: "Stick No Bills";
+        color: $azul;
+        font-size: 60px;
+        letter-spacing: 1px;
+        margin-bottom: 40px;
+        margin-top: 20px;
+        text-transform: uppercase;
+    }
+
+    .cadastro {
+        position: absolute;
+        left: 1300px;
+        top: 20px;
+        background-color:green;
+
+        &:hover {
+            background-color: lightgreen;
+        }
+    }
+
+    #registro {
+        position: absolute;
+        left: 1300px;
+        top: 20px;
+        background-color:green;
+
+        &:hover {
+            background-color: lightgreen;
+        }
+    }
+
+    #login {
+        position: absolute;
+        left: 1400px;
+        top: 20px;
+        background-color: green;
+
+        &:hover {
+            background-color: lightgreen;
+        }
+    }
+}
+
+h1 {
+    color: $azul;
+}
+
+p {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+    color: $laranja;
+}
+
+table {
+    background-color: $azul-claro;
+    width: 1530px;
+}
+
+tr {
+    text-align: center;
+
+    &.primeiro {
+        background-color: gold;
+    }
+
+    &.segundo {
+        background-color: silver;
+    }
+
+    &.terceiro {
+        background-color: $bronze;
+    }
+}
