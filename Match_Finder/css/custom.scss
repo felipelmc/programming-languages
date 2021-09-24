@@ -106,6 +106,7 @@ tr {
     padding: 16px;
     font-size: 16px;
     border: none;
+    box-shadow: 3px 0px 0px 0px rgba(0,0,0,0.2);
   }
   
 .dropdown {
@@ -119,7 +120,7 @@ tr {
     background-color: $laranja;
     min-width: 376px;
     min-height: 1000px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 3px 0px 0px 0px rgba(0,0,0,0.2);
     z-index: 1;
   }
   
