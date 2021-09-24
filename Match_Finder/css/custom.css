@@ -46,44 +46,11 @@ header h1 {
   text-transform: uppercase;
 }
 
-header .cadastro {
-  position: absolute;
-  left: 1300px;
-  top: 20px;
-  background-color: green;
-}
-
-header .cadastro:hover {
-  background-color: lightgreen;
-}
-
 header .logo-app {
   width: 307px;
   height: 130px;
   float: left;
   vertical-align: bottom;
-}
-
-header #registro {
-  position: absolute;
-  left: 1300px;
-  top: 20px;
-  background-color: green;
-}
-
-header #registro:hover {
-  background-color: lightgreen;
-}
-
-header #login {
-  position: absolute;
-  left: 1400px;
-  top: 20px;
-  background-color: green;
-}
-
-header #login:hover {
-  background-color: lightgreen;
 }
 
 h1 {

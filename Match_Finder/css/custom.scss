@@ -54,17 +54,6 @@ header {
         text-transform: uppercase;
     }
 
-    .cadastro {
-        position: absolute;
-        left: 1300px;
-        top: 20px;
-        background-color:green;
-
-        &:hover {
-            background-color: lightgreen;
-        }
-    }
-
     .logo-app {
         width: 307px;
         height: 130px;
@@ -72,30 +61,7 @@ header {
         vertical-align: bottom;
     }
 
-    #registro {
-        position: absolute;
-        left: 1300px;
-        top: 20px;
-        background-color:green;
-
-        &:hover {
-            background-color: lightgreen;
-        }
-    }
-
-    #login {
-        position: absolute;
-        left: 1400px;
-        top: 20px;
-        background-color: green;
-
-        &:hover {
-            background-color: lightgreen;
-	
-        }
-    }
 }
-
 
 
 h1 {
@@ -164,11 +130,17 @@ tr {
     display: block;
   }
   
-.dropdown-content a:hover {background-color: #ddd;}
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
   
-.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
   
-.dropdown:hover .dropbtn {background-color: $laranja}
+.dropdown:hover .dropbtn {
+    background-color: $laranja
+}
 
 .img-perfis-direita {
     width: 300px;
