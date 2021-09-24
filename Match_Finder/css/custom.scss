@@ -169,8 +169,36 @@ tr {
   
 .dropdown:hover .dropbtn {background-color: $laranja}
 
-.img-perfis {
+.img-perfis-direita {
     width: 300px;
+    margin-right:5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 5%;
+    text-align:right;
+    float: right;
+}
+
+.img-perfis-esquerda {
+    width: 300px;
+    margin-right:5%;
+    margin-top: 5%;
+    margin-left: 5%;
+    text-align:left;
+    float: left;
+}
+
+.descript-perfis {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+    color: $laranja;
+    text-align: justify;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.h2-perfis-direita {
+    margin-left: 5%;
 }
 
 
