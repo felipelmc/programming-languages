@@ -46,7 +46,11 @@ header h1 {
   text-transform: uppercase;
 }
 
-header .logo-app {
+#preenchedor {
+  height: 162px;
+}
+
+.logo-app {
   width: 307px;
   height: 130px;
   float: left;
@@ -70,7 +74,7 @@ p {
 
 table {
   background-color: #25c0c580;
-  width: 1530px;
+  width: 100%;
 }
 
 tr {
@@ -100,7 +104,9 @@ tr.terceiro {
 }
 
 .dropdown {
-  position: relative;
+  position: absolute;
+  left: -10px;
+  top: 0px;
   display: inline-block;
 }
 
@@ -108,7 +114,7 @@ tr.terceiro {
   display: none;
   position: absolute;
   background-color: #f27649;
-  min-width: 376px;
+  min-width: 339px;
   min-height: 1000px;
   -webkit-box-shadow: 3px 0px 0px 0px rgba(0, 0, 0, 0.2);
           box-shadow: 3px 0px 0px 0px rgba(0, 0, 0, 0.2);
@@ -123,7 +129,8 @@ tr.terceiro {
 }
 
 .dropdown-content a:hover {
-  background-color: #ddd;
+  background-color: #426CB4;
+  color: white;
 }
 
 .dropdown:hover .dropdown-content {

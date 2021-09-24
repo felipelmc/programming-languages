@@ -54,13 +54,17 @@ header {
         text-transform: uppercase;
     }
 
-    .logo-app {
-        width: 307px;
-        height: 130px;
-        float: left;
-        vertical-align: bottom;
-    }
+}
 
+#preenchedor {
+    height: 162px;
+}
+
+.logo-app {
+    width: 307px;
+    height: 130px;
+    float: left;
+    vertical-align: bottom;
 }
 
 
@@ -81,7 +85,7 @@ p {
 
 table {
     background-color: $azul-claro;
-    width: 1530px;
+    width: 100%;
 }
 
 tr {
@@ -110,7 +114,9 @@ tr {
   }
   
 .dropdown {
-    position: relative;
+    position: absolute;
+    left: -10px;
+    top: 0px;
     display: inline-block;
   }
   
@@ -118,7 +124,7 @@ tr {
     display: none;
     position: absolute;
     background-color: $laranja;
-    min-width: 376px;
+    min-width: 339px;
     min-height: 1000px;
     box-shadow: 3px 0px 0px 0px rgba(0,0,0,0.2);
     z-index: 1;
@@ -132,7 +138,8 @@ tr {
   }
   
 .dropdown-content a:hover {
-    background-color: #ddd;
+    background-color: $azul;
+    color: white;
 }
   
 .dropdown:hover .dropdown-content {
