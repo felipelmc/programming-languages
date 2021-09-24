@@ -84,6 +84,7 @@ h1 {
 
 h2 {
   color: #426CB4;
+  margin-top: 5%;
 }
 
 p {
@@ -113,7 +114,35 @@ tr.terceiro {
   background-color: #8d6f37;
 }
 
-.img-perfis {
+.img-perfis-direita {
   width: 300px;
+  margin-right: 5%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  margin-left: 5%;
+  text-align: right;
+  float: right;
+}
+
+.img-perfis-esquerda {
+  width: 300px;
+  margin-right: 5%;
+  margin-top: 5%;
+  margin-left: 5%;
+  text-align: left;
+  float: left;
+}
+
+.descript-perfis {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 20px;
+  color: #f27649;
+  text-align: justify;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.h2-perfis-direita {
+  margin-left: 5%;
 }
 /*# sourceMappingURL=custom.css.map */
