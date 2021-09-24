@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Stick+No+Bills:wght@300&display=swap");
 body {
   background-color: #ff91005b;
+  margin: 10px;
 }
 
 header {
@@ -81,6 +82,10 @@ h1 {
   color: #426CB4;
 }
 
+h2 {
+  color: #426CB4;
+}
+
 p {
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-size: 20px;
@@ -106,5 +111,9 @@ tr.segundo {
 
 tr.terceiro {
   background-color: #8d6f37;
+}
+
+.img-perfis {
+  width: 300px;
 }
 /*# sourceMappingURL=custom.css.map */

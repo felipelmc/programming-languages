@@ -10,6 +10,7 @@ $bronze: #8d6f37;
 
 body {
     background-color: $laranja-claro;
+    margin: 10px;
 }
 
 header {  
@@ -89,6 +90,10 @@ h1 {
     color: $azul;
 }
 
+h2 {
+    color: $azul;
+}
+
 p {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 20px;
@@ -115,3 +120,9 @@ tr {
         background-color: $bronze;
     }
 }
+
+.img-perfis {
+    width: 300px;
+}
+
+
