@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Stick+No+Bills:wght@300&display=swap');
 
 $laranja: #f27649;
+$laranja-escuro: #ee551d;
 $laranja-claro: #ff91005b;
 $azul-claro: #25c0c580;
 $azul: #426CB4;
@@ -11,6 +12,7 @@ $bronze: #8d6f37;
 body {
     background-color: $laranja-claro;
     margin: 10px;
+    height: 100%;
 }
 
 header {  
@@ -41,7 +43,7 @@ header {
     a:hover {
         background-color: $azul;
     }
-
+	
     h1 {
         font-family: "Stick No Bills";
         color: $azul;
@@ -63,6 +65,13 @@ header {
         }
     }
 
+    .logo-app {
+        width: 307px;
+        height: 130px;
+        float: left;
+        vertical-align: bottom;
+    }
+
     #registro {
         position: absolute;
         left: 1300px;
@@ -82,9 +91,12 @@ header {
 
         &:hover {
             background-color: lightgreen;
+	
         }
     }
 }
+
+
 
 h1 {
     color: $azul;
@@ -120,6 +132,42 @@ tr {
         background-color: $bronze;
     }
 }
+
+.dropbtn {
+    background-color: $laranja;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  }
+  
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: $laranja;
+    min-width: 376px;
+    min-height: 1000px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+.dropdown-content a:hover {background-color: #ddd;}
+  
+.dropdown:hover .dropdown-content {display: block;}
+  
+.dropdown:hover .dropbtn {background-color: $laranja}
 
 .img-perfis {
     width: 300px;
