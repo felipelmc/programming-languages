@@ -114,6 +114,18 @@ tr {
     left: -10px;
     top: -10px;
     display: inline-block;
+
+    &:hover {
+        .dropdown-content {
+            display: block;
+            top: 172px;
+        }
+
+        .dropbtn {
+            background-color: $laranja;
+            box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.2);
+        }
+    }
   }
   
 .dropdown-content {
@@ -124,29 +136,20 @@ tr {
     min-height: 10px;
     box-shadow: 5px 0px 0px 0px rgba(0,0,0,0.2);
     z-index: 1;
+
+    a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+
+        &:hover {
+            background-color: $azul;
+            color: white;
+        }
+      }
   }
   
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-  
-.dropdown-content a:hover {
-    background-color: $azul;
-    color: white;
-}
-  
-.dropdown:hover .dropdown-content {
-    display: block;
-    top: 172px;
-}
-  
-.dropdown:hover .dropbtn {
-    background-color: $laranja;
-    box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.2);
-}
 
 .img-perfis-direita {
     width: 300px;
@@ -182,5 +185,18 @@ tr {
 
 .espacamento {
     height: 100px;
+}
+
+#mapa {
+    background-image: url(../images/mapa_rio.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 30%;
+    top: 30%;
+
+    height: 460px;
+    width: 640px;
+
 }
 
