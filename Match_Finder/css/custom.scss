@@ -207,6 +207,14 @@ tr {
         img {
             width: 32px;
         }
+
+        .fotos {
+            position:fixed;
+            left: 30px;
+            top: 220px;
+
+            width: 0px;
+        }
     }
 
     button:nth-child(1) {       
@@ -218,6 +226,10 @@ tr {
             top: 182px;
             img {
                 width: 48px;
+            }
+
+            .fotos {
+                width: 400px;
             }
         }
     }
@@ -232,6 +244,10 @@ tr {
             img {
                 width: 48px;
             }
+
+            .fotos {
+                width: 400px;
+            }
         }
     }
 
@@ -244,6 +260,10 @@ tr {
             top: 282px;
             img {
                 width: 48px;
+            }
+
+            .fotos {
+                width: 400px;
             }
         }
     }
@@ -258,6 +278,10 @@ tr {
             img {
                 width: 48px;
             }
+
+            .fotos {
+                width: 400px;
+            }
         }
     }
 
@@ -270,6 +294,10 @@ tr {
             top: 182px;
             img {
                 width: 48px;
+            }
+
+            .fotos {
+                width: 400px;
             }
         }
     }
