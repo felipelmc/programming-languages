@@ -12,6 +12,7 @@ header {
   height: 162px;
   width: 100%;
   margin-top: -10px;
+  z-index: 1000;
 }
 
 header #cadastro {
@@ -210,7 +211,7 @@ tr.terceiro {
 
 #mapa button:nth-child(1):hover {
   left: 542px;
-  top: 182px;
+  top: 184px;
 }
 
 #mapa button:nth-child(1):hover img {
@@ -218,7 +219,7 @@ tr.terceiro {
 }
 
 #mapa button:nth-child(1):hover .fotos {
-  width: 400px;
+  width: 26%;
 }
 
 #mapa button:nth-child(2) {
@@ -228,7 +229,7 @@ tr.terceiro {
 
 #mapa button:nth-child(2):hover {
   left: 292px;
-  top: 282px;
+  top: 284px;
 }
 
 #mapa button:nth-child(2):hover img {
@@ -236,7 +237,7 @@ tr.terceiro {
 }
 
 #mapa button:nth-child(2):hover .fotos {
-  width: 400px;
+  width: 26%;
 }
 
 #mapa button:nth-child(3) {
@@ -246,7 +247,7 @@ tr.terceiro {
 
 #mapa button:nth-child(3):hover {
   left: 132px;
-  top: 282px;
+  top: 284px;
 }
 
 #mapa button:nth-child(3):hover img {
@@ -254,7 +255,7 @@ tr.terceiro {
 }
 
 #mapa button:nth-child(3):hover .fotos {
-  width: 400px;
+  width: 26%;
 }
 
 #mapa button:nth-child(4) {
@@ -264,7 +265,7 @@ tr.terceiro {
 
 #mapa button:nth-child(4):hover {
   left: 432px;
-  top: 82px;
+  top: 84px;
 }
 
 #mapa button:nth-child(4):hover img {
@@ -272,7 +273,7 @@ tr.terceiro {
 }
 
 #mapa button:nth-child(4):hover .fotos {
-  width: 400px;
+  width: 26%;
 }
 
 #mapa button:nth-child(5) {
@@ -282,7 +283,7 @@ tr.terceiro {
 
 #mapa button:nth-child(5):hover {
   left: 372px;
-  top: 182px;
+  top: 184px;
 }
 
 #mapa button:nth-child(5):hover img {
@@ -290,6 +291,6 @@ tr.terceiro {
 }
 
 #mapa button:nth-child(5):hover .fotos {
-  width: 400px;
+  width: 26%;
 }
 /*# sourceMappingURL=custom.css.map */
