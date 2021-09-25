@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lacquer&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Stick+No+Bills:wght@300&display=swap');
 
+
 $laranja: #f27649;
 $laranja-escuro: #ee551d;
 $laranja-claro: #ff91005b;
@@ -8,6 +9,7 @@ $azul-claro: #25c0c580;
 $azul: #426CB4;
 $azul-escuro: #3F3464;
 $bronze: #8d6f37;
+
 
 body {
     background-color: $laranja-claro;
@@ -72,6 +74,12 @@ h2 {
     color: $azul;
     margin-top: 5%;
 }
+
+h4 {
+    color: $azul;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
 
 p {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -152,7 +160,7 @@ tr {
   
 
 .img-perfis-direita {
-    width: 300px;
+    width: 350px;
     margin-right:5%;
     margin-top: 5%;
     margin-bottom: 5%;
@@ -162,10 +170,11 @@ tr {
 }
 
 .img-perfis-esquerda {
-    width: 300px;
+    width: 350px;
     margin-right:5%;
     margin-top: 5%;
     margin-left: 5%;
+    margin-bottom: 5%;
     text-align:left;
     float: left;
 }
@@ -303,4 +312,25 @@ tr {
     }
 
 }
+
+.input-group-text {
+    display: flex;
+    align-items: center;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: $azul;
+    text-align: center;
+    white-space: nowrap;
+    background-color: #e9ecef;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+  }
+
+
+
+
+
+
 
