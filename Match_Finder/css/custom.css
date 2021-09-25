@@ -17,11 +17,14 @@ header {
 header #cadastro {
   position: relative;
   left: 90%;
-  margin-top: 9px;
-  margin-bottom: 9px;
 }
 
-header #cadastro button {
+header #registro {
+  margin-bottom: 16px;
+  margin-top: 8px;
+}
+
+header button {
   position: relative;
   top: 10px;
   border: none;
@@ -36,7 +39,7 @@ header #cadastro button {
   color: white;
 }
 
-header #cadastro button:hover {
+header button:hover {
   background-color: #3F3464;
 }
 
@@ -98,7 +101,7 @@ tr.terceiro {
 .dropdown {
   position: absolute;
   left: -10px;
-  top: 0px;
+  top: -10px;
   display: inline-block;
 }
 
@@ -127,6 +130,7 @@ tr.terceiro {
 
 .dropdown:hover .dropdown-content {
   display: block;
+  top: 172px;
 }
 
 .dropdown:hover .dropbtn {

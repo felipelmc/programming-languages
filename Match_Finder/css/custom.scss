@@ -25,9 +25,12 @@ header {
     #cadastro {
         position: relative;
         left: 90%;
-        margin-top:9px;
-        margin-bottom:9px;
 
+    }
+    #registro {
+        margin-bottom: 16px;
+        margin-top: 8px;
+    }
         button {
             position: relative;
             top: 10px;
@@ -42,12 +45,11 @@ header {
             font-size: 18px;
             text-decoration: none;
             color:white;
-
             &:hover {
                 background-color: $azul-escuro;
             }
         }
-    }
+    
 }
 
 #preenchedor {
@@ -110,7 +112,7 @@ tr {
 .dropdown {
     position: absolute;
     left: -10px;
-    top: 0px;
+    top: -10px;
     display: inline-block;
   }
   
@@ -138,6 +140,7 @@ tr {
   
 .dropdown:hover .dropdown-content {
     display: block;
+    top: 172px;
 }
   
 .dropdown:hover .dropbtn {
