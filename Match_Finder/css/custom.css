@@ -17,24 +17,26 @@ header {
 header #cadastro {
   position: relative;
   left: 90%;
+  margin-top: 9px;
+  margin-bottom: 9px;
 }
 
-header #cadastro a {
-  line-height: 3;
+header #cadastro button {
   position: relative;
   top: 10px;
+  border: none;
   background-color: #426CB4;
   padding-left: 40px;
   padding-right: 100%;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-size: 20px;
+  font-size: 18px;
   text-decoration: none;
   color: white;
 }
 
-header #cadastro a:hover {
+header #cadastro button:hover {
   background-color: #3F3464;
 }
 

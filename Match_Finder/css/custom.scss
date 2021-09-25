@@ -25,20 +25,21 @@ header {
     #cadastro {
         position: relative;
         left: 90%;
+        margin-top:9px;
+        margin-bottom:9px;
 
-        a {
-            line-height: 3;
+        button {
             position: relative;
             top: 10px;
-
+            border: none;
             background-color: $azul;
             padding-left: 40px;
             padding-right: 100%;
-            padding-top: 15px;
-            padding-bottom: 15px;
+            padding-top: 10px;
+            padding-bottom: 10px;
 
             font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-            font-size: 20px;
+            font-size: 18px;
             text-decoration: none;
             color:white;
 
