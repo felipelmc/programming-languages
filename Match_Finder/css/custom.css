@@ -196,6 +196,13 @@ tr.terceiro {
   width: 32px;
 }
 
+#mapa button .fotos {
+  position: fixed;
+  left: 30px;
+  top: 220px;
+  width: 0px;
+}
+
 #mapa button:nth-child(1) {
   left: 550px;
   top: 200px;
@@ -208,6 +215,10 @@ tr.terceiro {
 
 #mapa button:nth-child(1):hover img {
   width: 48px;
+}
+
+#mapa button:nth-child(1):hover .fotos {
+  width: 400px;
 }
 
 #mapa button:nth-child(2) {
@@ -224,6 +235,10 @@ tr.terceiro {
   width: 48px;
 }
 
+#mapa button:nth-child(2):hover .fotos {
+  width: 400px;
+}
+
 #mapa button:nth-child(3) {
   left: 140px;
   top: 300px;
@@ -236,6 +251,10 @@ tr.terceiro {
 
 #mapa button:nth-child(3):hover img {
   width: 48px;
+}
+
+#mapa button:nth-child(3):hover .fotos {
+  width: 400px;
 }
 
 #mapa button:nth-child(4) {
@@ -252,6 +271,10 @@ tr.terceiro {
   width: 48px;
 }
 
+#mapa button:nth-child(4):hover .fotos {
+  width: 400px;
+}
+
 #mapa button:nth-child(5) {
   left: 380px;
   top: 200px;
@@ -264,5 +287,9 @@ tr.terceiro {
 
 #mapa button:nth-child(5):hover img {
   width: 48px;
+}
+
+#mapa button:nth-child(5):hover .fotos {
+  width: 400px;
 }
 /*# sourceMappingURL=custom.css.map */
