@@ -19,22 +19,27 @@ header #cadastro {
   left: 90%;
 }
 
-header #cadastro a {
-  line-height: 3;
+header #registro {
+  margin-bottom: 16px;
+  margin-top: 8px;
+}
+
+header button {
   position: relative;
   top: 10px;
+  border: none;
   background-color: #426CB4;
   padding-left: 40px;
   padding-right: 100%;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-size: 20px;
+  font-size: 18px;
   text-decoration: none;
   color: white;
 }
 
-header #cadastro a:hover {
+header button:hover {
   background-color: #3F3464;
 }
 
@@ -96,7 +101,7 @@ tr.terceiro {
 .dropdown {
   position: absolute;
   left: -10px;
-  top: 0px;
+  top: -10px;
   display: inline-block;
 }
 
@@ -125,6 +130,7 @@ tr.terceiro {
 
 .dropdown:hover .dropdown-content {
   display: block;
+  top: 172px;
 }
 
 .dropdown:hover .dropbtn {
