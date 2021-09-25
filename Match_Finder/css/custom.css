@@ -187,9 +187,7 @@ tr.terceiro {
 }
 
 #mapa button {
-  position: relative;
-  left: 380px;
-  top: 200px;
+  position: absolute;
   background-color: rgba(0, 0, 0, 0);
   border-color: rgba(0, 0, 0, 0);
 }
@@ -198,12 +196,73 @@ tr.terceiro {
   width: 32px;
 }
 
-#mapa button:hover {
+#mapa button:nth-child(1) {
+  left: 550px;
+  top: 200px;
+}
+
+#mapa button:nth-child(1):hover {
+  left: 542px;
+  top: 182px;
+}
+
+#mapa button:nth-child(1):hover img {
+  width: 48px;
+}
+
+#mapa button:nth-child(2) {
+  left: 300px;
+  top: 300px;
+}
+
+#mapa button:nth-child(2):hover {
+  left: 292px;
+  top: 282px;
+}
+
+#mapa button:nth-child(2):hover img {
+  width: 48px;
+}
+
+#mapa button:nth-child(3) {
+  left: 140px;
+  top: 300px;
+}
+
+#mapa button:nth-child(3):hover {
+  left: 132px;
+  top: 282px;
+}
+
+#mapa button:nth-child(3):hover img {
+  width: 48px;
+}
+
+#mapa button:nth-child(4) {
+  left: 440px;
+  top: 100px;
+}
+
+#mapa button:nth-child(4):hover {
+  left: 432px;
+  top: 82px;
+}
+
+#mapa button:nth-child(4):hover img {
+  width: 48px;
+}
+
+#mapa button:nth-child(5) {
+  left: 380px;
+  top: 200px;
+}
+
+#mapa button:nth-child(5):hover {
   left: 372px;
   top: 182px;
 }
 
-#mapa button:hover img {
+#mapa button:nth-child(5):hover img {
   width: 48px;
 }
 /*# sourceMappingURL=custom.css.map */

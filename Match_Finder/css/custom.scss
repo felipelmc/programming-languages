@@ -199,9 +199,7 @@ tr {
     width: 640px;
 
     button {
-        position: relative;
-        left: 380px;
-        top: 200px; 
+        position: absolute;
 
         background-color: rgba(0, 0, 0, 0);
         border-color: rgba(0, 0, 0, 0);
@@ -209,6 +207,63 @@ tr {
         img {
             width: 32px;
         }
+    }
+
+    button:nth-child(1) {       
+        left: 550px;
+        top: 200px; 
+
+        &:hover {
+            left: 542px;
+            top: 182px;
+            img {
+                width: 48px;
+            }
+        }
+    }
+
+    button:nth-child(2) {
+        left: 300px;
+        top: 300px;
+
+        &:hover {
+            left: 292px;
+            top: 282px;
+            img {
+                width: 48px;
+            }
+        }
+    }
+
+    button:nth-child(3) {
+        left: 140px;
+        top: 300px;
+
+        &:hover {
+            left: 132px;
+            top: 282px;
+            img {
+                width: 48px;
+            }
+        }
+    }
+
+    button:nth-child(4) {
+        left: 440px;
+        top: 100px;
+
+        &:hover {
+            left: 432px;
+            top: 82px;
+            img {
+                width: 48px;
+            }
+        }
+    }
+
+    button:nth-child(5) {
+        left: 380px;
+        top: 200px;
 
         &:hover {
             left: 372px;
