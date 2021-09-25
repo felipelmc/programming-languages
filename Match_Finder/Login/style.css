@@ -1,0 +1,25 @@
+body {
+  background: #fd4b05e1;
+  color: #fafbff;
+}
+
+.form-signin {
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  padding-top: 0px;
+  padding-right: 15px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+  margin: auto;
+  margin-top: auto;
+  margin-right: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+  background: #3F3464;
+}
+
+footer {
+  color: chartreuse;
+}
+/*# sourceMappingURL=style.css.map */
