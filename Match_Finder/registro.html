@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
     <link href="css/main.css" rel="stylesheet" />
 
     <title>Registro</title>
@@ -25,7 +25,7 @@
 
     <div class="container">
     <form>
-      <div class="form-row">
+      <div class="row g-3">
         <div class="col-md-5 mb-3">
           <label for="validationServer01">Primeiro Nome</label>
           <input type="text" class="form-control is-valid" id="validationServer01" placeholder="Digite seu nome..."  required>
@@ -44,7 +44,7 @@
 
       
      
-      <div class="form-row">
+      <div class="row g-3">
         <div class="col-md-6 mb-3">
           <label for="validationServer03">Cidade</label>
           <input type="text" class="form-control is-invalid" id="validationServer03" placeholder="Digite o nome de sua cidade..." required>
@@ -54,14 +54,14 @@
         </div>
         <div class="col-md-3 mb-3">
           <label for="validationServer04">Estado</label>
-          <select class="custom-select is-invalid" id="validationServer04" required>
+          <select class="form-select is-invalid" id="validationServer04" aria-describedby="validationServer04Feedback" required>
             <option>Opções</option>
             <option>Rio de Janeiro</option>
             <option>São Paulo</option>
             <option>Tocantins</option>
             <option>...</option>
           </select>
-          <div class="invalid-feedback">
+          <div id="validationServer04Feedback" class="invalid-feedback">
             Please select a valid state.
           </div>
         </div>
@@ -74,7 +74,7 @@
         </div>
       </div>
 
-      <div class="form-row">
+      <div class="row g-3">
         <div class="col-md-12 mb-3">
             <label id="email_label" for="email">Email</label>
             <input id="email" name="email" type="email" class="form-control is-valid" placeholder="Digite seu email..." required/>
@@ -86,13 +86,11 @@
       </div>
 
 
-      <div class="form-row">
+      <div class="row g-3">
         <div class="col-md-6 mb-3">
           <label for="validationServerUsername">Nome de Usuário</label>
-          <div class="input-group">
-            <div class="input-group-prepend">
-              <span class="input-group-text" id="inputGroupPrepend3">@</span>
-            </div>
+          <div class="input-group has validation">
+            <span class="input-group-text" id="inputGroupPrepend3">@</span>
             <input type="text" class="form-control is-invalid" id="validationServerUsername" aria-describedby="inputGroupPrepend3" placeholder="Digite seu nome de usuário..." required>
             <div class="invalid-feedback">
               Please choose a username.
@@ -114,13 +112,13 @@
 
        
 
-      <div class="form-group">
+      <div class="col-12">
        <div class="form-check">
-         <input class="form-check-input is-invalid" type="checkbox" value=""  id="invalidCheck3" required>
+         <input class="form-check-input is-invalid" type="checkbox" value=""  id="invalidCheck3" aria-describedby="invalidCheck3Feedback" required>
          <label class="form-check-label"  for="invalidCheck3">
           Agree to terms and conditions 
          </label>
-          <div class="invalid-feedback">
+          <div  id="invalidCheck3Feedback" class="invalid-feedback">
             You must agree before submitting.
           </div>
         </div>
@@ -133,14 +131,10 @@
       
       
       <div class="d-flex justify-content-between">
-        <div ><button type="button" class="btn btn-secondary">Voltar para página inicial</button></div>
-        <div ><button type="button" class="btn btn-primary">Finalizar</button></div>
+        <a href="index.html"><button type="button" class="btn btn-secondary">Voltar para página inicial</button></a>
+        <a href="#"><button type="submit" class="btn btn-primary">Finalizar</button></a>
+        
       </div>
-      
-      
-
-       
-
       
 
      
@@ -159,29 +153,6 @@
     
 
     
-
-    
-   
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/boostrap.bundle.min.js"></script> 
   </body>
 </html>
