@@ -25,26 +25,20 @@
 
       
       <form class="form-signin">
-          <div class="col-md-12 mb-3">
-            <label for="validationServerUsername">Nome de Usuário</label>
-            <div class="input-group">
-                <div class="input-group-prepend">
-                  <span class="input-group-text" id="inputGroupPrepend3">@</span>
-                </div>
-                <input type="text" class="form-control is-invalid" id="validationServerUsername" aria-describedby="inputGroupPrepend3" placeholder="Digite seu nome de usuário..." required>
-                <div class="invalid-feedback">
-                  Please choose a username.
-                </div>
+            <div class="col-md-12 mb-3">
+              <label for="Username">Nome de Usuário</label>
+              <div class="input-group has validation">
+                <span class="input-group-text" id="inputGroupPrepend3">@</span>
+                <input type="text" class="form-control" id="Username" placeholder="Digite seu nome de usuário..." >  
               </div>
             </div>
 
             <div class="col-md-12 mb-3">
-              <label for="validationServer02">Senha</label>
-              <input type="text" class="form-control is-valid" id="validationServer02" placeholder="Digite sua senha..." required>
-              <div class="valid-feedback">
-                Looks good!
-              </div>
+                <label id="password_label" for="password">Senha</label>
+                <input id="password" name="password" type="password" class="form-control" placeholder="Digite sua senha..." />
             </div>
+
+        
 
             <div class="checkbox md-5 mb-3">
               <label>
