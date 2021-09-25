@@ -198,5 +198,26 @@ tr {
     height: 460px;
     width: 640px;
 
+    button {
+        position: relative;
+        left: 380px;
+        top: 200px; 
+
+        background-color: rgba(0, 0, 0, 0);
+        border-color: rgba(0, 0, 0, 0);
+
+        img {
+            width: 32px;
+        }
+
+        &:hover {
+            left: 372px;
+            top: 182px;
+            img {
+                width: 48px;
+            }
+        }
+    }
+
 }
 

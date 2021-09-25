@@ -185,4 +185,25 @@ tr.terceiro {
   height: 460px;
   width: 640px;
 }
+
+#mapa button {
+  position: relative;
+  left: 380px;
+  top: 200px;
+  background-color: rgba(0, 0, 0, 0);
+  border-color: rgba(0, 0, 0, 0);
+}
+
+#mapa button img {
+  width: 32px;
+}
+
+#mapa button:hover {
+  left: 372px;
+  top: 182px;
+}
+
+#mapa button:hover img {
+  width: 48px;
+}
 /*# sourceMappingURL=custom.css.map */
