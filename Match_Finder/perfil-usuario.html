@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/main.css" rel="stylesheet" />
+    <title>Perfil pessoal</title>
+    <link rel='icon' href='favicon.ico' type='image/x-icon' sizes="32x32" />
+</head>
+
+<body>
+    <header>
+        <div class="dropdown">
+            <button class="dropbtn">        <img class="logo-app" src="images/logo.png" alt="Match Finder Logo" /></button>
+            <div class="dropdown-content">
+                <a href="index.html">Início</a>
+                <a href="mapa.html">Mapa</a>
+                <a href="chat.html">Chat</a>
+                <a href="ranking.html">Ranking</a>
+            </div>
+        </div>
+    </header>
+
+    <div id="preenchedor"></div>
+
+    <img class="img-perfis-esquerda" src="images/felipe.png" alt="Foto do usuário"/>
+    <h2 class="h2-perfis-direita">Você</h2>
+
+    <div class="espacamento"></div>
+    <div class="espacamento"></div>
+
+    <div class="form-floating">
+        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+        <label for="floatingTextarea">Status</label>
+    </div>
+
+    <div class="form-floating">
+        <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+            <option selected>Esporte favorito</option>
+            <option value="1">Futebol</option>
+            <option value="2">Futsal</option>
+            <option value="3">Basquete</option>
+            <option value="3">Vôlei</option>
+            <option value="3">Vôlei de praia</option>
+            <option value="3">Handebol</option>
+            <option value="3">Altinha</option>
+        </select>
+        <label for="floatingSelect">Clique para escolher</label>
+    </div>
+
+<script type="text/javascript" src="js/boostrap.bundle.min.js"></script>
+</body>
+</html>
