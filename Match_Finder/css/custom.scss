@@ -10,6 +10,22 @@ $azul: #426CB4;
 $azul-escuro: #3F3464;
 $bronze: #8d6f37;
 
+@mixin mapa($left, $right) {
+    left: $left;
+    top: $right; 
+
+    &:hover {
+        left: $left - 8px;
+        top: $right - 16px;
+        img {
+            width: 48px;
+        }
+
+        .fotos {
+            width: 26%;
+        }
+    }
+}
 
 body {
     background-color: $laranja-claro;
@@ -23,6 +39,7 @@ header {
     height: 162px;
     width: 100%;
     margin-top: -10px;
+    z-index: 1000;
 
     #cadastro {
         position: relative;
@@ -227,88 +244,23 @@ tr {
     }
 
     button:nth-child(1) {       
-        left: 550px;
-        top: 200px; 
-
-        &:hover {
-            left: 542px;
-            top: 182px;
-            img {
-                width: 48px;
-            }
-
-            .fotos {
-                width: 400px;
-            }
-        }
+        @include mapa(550px, 200px)
     }
 
     button:nth-child(2) {
-        left: 300px;
-        top: 300px;
-
-        &:hover {
-            left: 292px;
-            top: 282px;
-            img {
-                width: 48px;
-            }
-
-            .fotos {
-                width: 400px;
-            }
-        }
+        @include mapa(300px, 300px)
     }
 
     button:nth-child(3) {
-        left: 140px;
-        top: 300px;
-
-        &:hover {
-            left: 132px;
-            top: 282px;
-            img {
-                width: 48px;
-            }
-
-            .fotos {
-                width: 400px;
-            }
-        }
+        @include mapa(140px, 300px)
     }
 
     button:nth-child(4) {
-        left: 440px;
-        top: 100px;
-
-        &:hover {
-            left: 432px;
-            top: 82px;
-            img {
-                width: 48px;
-            }
-
-            .fotos {
-                width: 400px;
-            }
-        }
+        @include mapa(440px, 100px)
     }
 
     button:nth-child(5) {
-        left: 380px;
-        top: 200px;
-
-        &:hover {
-            left: 372px;
-            top: 182px;
-            img {
-                width: 48px;
-            }
-
-            .fotos {
-                width: 400px;
-            }
-        }
+        @include mapa(380px, 200px)
     }
 
 }
