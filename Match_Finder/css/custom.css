@@ -165,6 +165,10 @@ tr.terceiro {
   float: left;
 }
 
+#img-janaina {
+  height: 500px;
+}
+
 .descript-perfis {
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-size: 20px;
@@ -179,7 +183,7 @@ tr.terceiro {
 }
 
 .espacamento {
-  height: 100px;
+  height: 200px;
 }
 
 #mapa {
@@ -302,5 +306,53 @@ tr.terceiro {
 
 .input-group-text {
   color: #426CB4;
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  max-width: 1600px;
+  margin: 0 auto;
+  grid-gap: 20px;
+}
+
+.foto {
+  -ms-grid-column: 1;
+  grid-column: 1;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  grid-row: 1 / 4;
+  max-width: 100%;
+  margin-top: 15%;
+}
+
+.col2 {
+  -ms-grid-column: 2;
+  grid-column: 2;
+  max-height: 50px;
+}
+
+.col3-row1 {
+  -ms-grid-column: 3;
+  grid-column: 3;
+  -ms-grid-row: 1;
+  grid-row: 1;
+  margin-top: 15%;
+}
+
+.col3-row2 {
+  -ms-grid-column: 3;
+  grid-column: 3;
+  -ms-grid-row: 2;
+  grid-row: 2;
+}
+
+.col3-row3 {
+  -ms-grid-column: 3;
+  grid-column: 3;
+  -ms-grid-row: 3;
+  grid-row: 3;
 }
 /*# sourceMappingURL=custom.css.map */

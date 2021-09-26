@@ -196,6 +196,10 @@ tr {
     float: left;
 }
 
+#img-janaina {
+    height: 500px;
+}
+
 .descript-perfis {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 20px;
@@ -210,7 +214,7 @@ tr {
 }
 
 .espacamento {
-    height: 100px;
+    height: 200px;
 }
 
 #mapa {
@@ -269,6 +273,42 @@ tr {
     color: $azul;
   }
 
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 1600px;
+    margin: 0 auto;
+    grid-gap: 20px;
+}
+
+
+.foto {
+    grid-column: 1;
+    grid-row: 1 / 4;
+    max-width: 100%;
+    margin-top: 15%;
+}
+
+.col2 {
+    grid-column: 2;
+    max-height: 50px;
+}
+
+.col3-row1 {
+    grid-column: 3;
+    grid-row: 1;
+    margin-top: 15%;
+}
+
+.col3-row2 {
+    grid-column: 3;
+    grid-row: 2;
+}
+
+.col3-row3 {
+    grid-column: 3;
+    grid-row: 3;
+}
 
 
 
