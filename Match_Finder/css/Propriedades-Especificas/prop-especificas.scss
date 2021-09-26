@@ -104,7 +104,21 @@ tr {
 
 
 /*Perfis.html*/
-.img-perfis-direita {
+.perfis-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.img-perfis{
+    min-width: 350px;
+    margin-top: 60px;
+    margin-bottom: 5%;
+}
+.h2-perfis{
+    margin-top: 60px;
+}
+/*.img-perfis-direita {
     width: 350px;
     margin-right:5%;
     margin-top: 5%;
@@ -136,7 +150,7 @@ tr {
 .espacamento {
     height: 100px;
 }/*Pra ajustar a distancia entre os perfis*/
-
+/*
 
 /*Perfil-usuario.html*/
 .input-group-text {

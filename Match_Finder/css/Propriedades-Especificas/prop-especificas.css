@@ -144,44 +144,62 @@ tr.terceiro {
 }
 
 /*Perfis.html*/
-.img-perfis-direita {
-  width: 350px;
-  margin-right: 5%;
-  margin-top: 5%;
-  margin-bottom: 5%;
-  margin-left: 5%;
-  text-align: right;
-  float: right;
+.perfis-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
+.img-perfis {
+  min-width: 350px;
+  margin-top: 60px;
+  margin-bottom: 5%;
+}
+
+.h2-perfis {
+  margin-top: 60px;
+}
+
+/*.img-perfis-direita {
+    width: 350px;
+    margin-right:5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 5%;
+    text-align:right;
+    float: right;
+}
 .img-perfis-esquerda {
-  width: 350px;
-  margin-right: 5%;
-  margin-top: 5%;
-  margin-left: 5%;
-  margin-bottom: 5%;
-  text-align: left;
-  float: left;
+    width: 350px;
+    margin-right:5%;
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-bottom: 5%;
+    text-align:left;
+    float: left;
 }
-
 .descript-perfis {
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  font-size: 20px;
-  color: #f27649;
-  text-align: justify;
-  margin-left: 5%;
-  margin-right: 5%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+    color: $laranja;
+    text-align: justify;
+    margin-left: 5%;
+    margin-right: 5%;
 }
-
 .h2-perfis-direita {
-  margin-left: 5%;
+    margin-left: 5%;
 }
-
 .espacamento {
-  height: 100px;
-}
+    height: 100px;
+}/*Pra ajustar a distancia entre os perfis*/
+/*
 
-/*Pra ajustar a distancia entre os perfis*/
 /*Perfil-usuario.html*/
 .input-group-text {
   color: #426CB4;
