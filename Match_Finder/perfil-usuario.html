@@ -24,15 +24,10 @@
 
     <div id="preenchedor"></div>
 
-<section class="grid">
+<section class="grid-perfil-pessoal">
     <img class="img-perfis-esquerda foto" src="images/felipe.png" alt="Foto do usuário"/>
 
-    <p class="form-check form-switch mt-5">
-        <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
-        <label class="form-check-label" for="flexSwitchCheckDefault">Buscando a próxima partida</label>
-    </p>
-
-    <p class="input-group flex-nowrap col2">
+    <p class="input-group flex-nowrap col2 mt-5">
         <span class="input-group-text" id="addon-wrapping">@</span>
         <input type="text" class="form-control" placeholder="Nome de usuário" aria-label="Nome de usuário" aria-describedby="addon-wrapping">
     </p>
@@ -42,12 +37,36 @@
         <input type="text" class="form-control" aria-label="" aria-describedby="">
     </p>
 
-    <p class="form-floating mb-3 col3-row1">
+    <p class="form-floating mb-3 col2">
         <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
         <label for="floatingTextarea">Sobre mim</label>
     </p>
+</section>
 
-    <div class="form-floating col3-row2">
+<section class="grid-perfil-pessoal">
+    <div>
+    <h4 class="mt-3 col1">Horários disponíveis</h4>
+    <p class="form-check form-check-inline col1">
+        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+        <label class="form-check-label" for="inlineCheckbox1">Manhã</label>
+    </p>
+    
+    <p class="form-check form-check-inline col1">
+        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+        <label class="form-check-label" for="inlineCheckbox2">Tarde</label>
+    </p>
+    
+    <p class="form-check form-check-inline col1">
+        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+        <label class="form-check-label" for="inlineCheckbox2">Noite</label>
+    </p>
+
+        <p class="form-check form-switch col2">
+        <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+        <label class="form-check-label" for="flexSwitchCheckDefault">Buscando a próxima partida</label>
+    </p>
+    </div>
+    <div class="form-floating col2">
         <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
             <option selected>Esporte favorito</option>
             <option value="1">Futebol</option>
@@ -63,22 +82,6 @@
         </select>
         <label for="floatingSelect">Clique para escolher</label>
     </div>
-
-    <h4 class="mt-3 col3-row3">Horários disponíveis</h4>
-    <p class="form-check form-check-inline col3-row3">
-        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-        <label class="form-check-label" for="inlineCheckbox1">Manhã</label>
-    </p>
-    
-    <p class="form-check form-check-inline col3-row3">
-        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-        <label class="form-check-label" for="inlineCheckbox2">Tarde</label>
-    </p>
-    
-    <p class="form-check form-check-inline col3-row3">
-        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-        <label class="form-check-label" for="inlineCheckbox2">Noite</label>
-    </p>
 </section>
 <script type="text/javascript" src="js/boostrap.bundle.min.js"></script>
 
