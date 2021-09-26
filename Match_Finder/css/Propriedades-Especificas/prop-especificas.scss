@@ -1,4 +1,3 @@
-/*Cores e fontes*/
 @import url('https://fonts.googleapis.com/css2?family=Lacquer&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Stick+No+Bills:wght@300&display=swap');
 $laranja: #f27649;
@@ -51,104 +50,8 @@ tr {
         background-color: $bronze;
     }
 }
-<<<<<<< HEAD:Match_Finder/css/custom.scss
-
-.dropbtn {
-    background-color: $laranja;
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-
-  }
-  
-.dropdown {
-    position: absolute;
-    left: -10px;
-    top: -10px;
-    display: inline-block;
-
-    &:hover {
-        .dropdown-content {
-            display: block;
-            top: 172px;
-        }
-
-        .dropbtn {
-            background-color: $laranja;
-            box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.2);
-        }
-    }
-  }
-  
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: $laranja;
-    min-width: 339px;
-    min-height: 10px;
-    box-shadow: 5px 0px 0px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-
-    a {
-        color: black;
-        padding: 12px 16px;
-        text-decoration: none;
-        display: block;
-
-        &:hover {
-            background-color: $azul;
-            color: white;
-        }
-      }
-  }
-  
-
-.img-perfis-direita {
-    width: 350px;
-    margin-right:5%;
-    margin-top: 5%;
-    margin-bottom: 5%;
-    margin-left: 5%;
-    text-align:right;
-    float: right;
-}
-
-.img-perfis-esquerda {
-    width: 350px;
-    margin-right:5%;
-    margin-top: 5%;
-    margin-left: 5%;
-    margin-bottom: 5%;
-    text-align:left;
-    float: left;
-}
-
-#img-janaina {
-    height: 500px;
-}
-
-.descript-perfis {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 20px;
-    color: $laranja;
-    text-align: justify;
-    margin-left: 5%;
-    margin-right: 5%;
-}
-
-.h2-perfis-direita {
-    margin-left: 5%;
-}
-
-.espacamento {
-    height: 200px;
-}
-
-=======
->>>>>>> 0dd91b321c9f2a54af457110f35811833f97627c:Match_Finder/css/Propriedades-Especificas/prop-especificas.scss
 #mapa {
-    background-image: url(../images/mapa_rio.png);
+    background-image: url(mapa_rio.png);
     background-size: 100%;
     background-repeat: no-repeat;
     position: absolute;
@@ -199,52 +102,6 @@ tr {
 
 }
 
-<<<<<<< HEAD:Match_Finder/css/custom.scss
-.input-group-text {
-    color: $azul;
-  }
-
-.grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    max-width: 1600px;
-    margin: 0 auto;
-    grid-gap: 20px;
-}
-
-
-.foto {
-    grid-column: 1;
-    grid-row: 1 / 4;
-    max-width: 100%;
-    margin-top: 15%;
-}
-
-.col2 {
-    grid-column: 2;
-    max-height: 50px;
-}
-
-.col3-row1 {
-    grid-column: 3;
-    grid-row: 1;
-    margin-top: 15%;
-}
-
-.col3-row2 {
-    grid-column: 3;
-    grid-row: 2;
-}
-
-.col3-row3 {
-    grid-column: 3;
-    grid-row: 3;
-}
-
-
-
-=======
->>>>>>> 0dd91b321c9f2a54af457110f35811833f97627c:Match_Finder/css/Propriedades-Especificas/prop-especificas.scss
 
 /*Perfis.html*/
 .img-perfis-direita {
@@ -285,3 +142,44 @@ tr {
 .input-group-text {
     color: $azul;
   }/*Muda o padrão de cor da fonte do bootstrap*/
+
+  .input-group-text {
+    color: $azul;
+  }
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 1600px;
+    margin: 0 auto;
+    grid-gap: 20px;
+}
+
+
+.foto {
+    grid-column: 1;
+    grid-row: 1 / 4;
+    max-width: 100%;
+    margin-top: 15%;
+}
+
+.col2 {
+    grid-column: 2;
+    max-height: 50px;
+}
+
+.col3-row1 {
+    grid-column: 3;
+    grid-row: 1;
+    margin-top: 15%;
+}
+
+.col3-row2 {
+    grid-column: 3;
+    grid-row: 2;
+}
+
+.col3-row3 {
+    grid-column: 3;
+    grid-row: 3;
+}
