@@ -157,9 +157,6 @@ tr {
     color: $azul;
   }/*Muda o padrão de cor da fonte do bootstrap*/
 
-  .input-group-text {
-    color: $azul;
-  }
 
 .grid-perfil-pessoal {
     display: grid;
@@ -229,3 +226,22 @@ tr {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
+/*Registro.html*/
+
+.form-control:focus{
+    color: #212529;
+    background-color: #fff;
+    border-color: #86b7fe;
+    outline: 0;
+    box-shadow: none;
+    width: 102%;
+    border-width: 2px;
+    margin-right: 10px;
+}
+#Username:focus{
+    border-width: 2px;
+    width:80%;
+}
+#Username:focus .input-group-text{
+    color:#86b7fe ;
+}
