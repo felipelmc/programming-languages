@@ -10,6 +10,47 @@ $bronze: #8d6f37;
 
 /*Propriedades especificas*/
 
+/* index.html */
+
+.h1-index {
+    text-align: center;
+    padding: 20px;
+    background-color: $azul;
+    color: white;
+    border-radius: 5rem;
+
+}
+
+.grid-index {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap:20px;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 10px;;
+}
+
+
+.grid-index-item {
+    display: grid; 
+}
+
+.grid-index-item img{
+    grid-column: 1;
+    grid-row: 1 / 3;
+    align-self: end;
+    max-width: 100%;
+    display: block;
+}
+
+.grid-index-item p {
+    background: $azul;
+    padding: 10px;
+    color: white;
+    grid-column: 1;
+    grid-row: 2 / 3;
+    align-self: end;
+}
 
 /*Mapa.html*/
 @mixin mapa($left, $right) {
