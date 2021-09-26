@@ -78,9 +78,10 @@ $bronze: #8d6f37;
     background-image: url(mapa_rio.png);
     background-size: 100%;
     background-repeat: no-repeat;
-    position: absolute;
+    position: relative;
     left: 30%;
-    top: 30%;
+    margin-top: 45px;
+
 
     height: 460px;
     width: 640px;
@@ -108,6 +109,7 @@ $bronze: #8d6f37;
             left: 2%;
             top: 500px;
             text-align: left;
+            width: 26%;
 
             font-size: 0px;
 
