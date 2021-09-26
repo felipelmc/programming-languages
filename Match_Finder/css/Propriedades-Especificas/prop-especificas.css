@@ -1,80 +1,10 @@
+@charset "UTF-8";
+/*Cores e fontes*/
 @import url("https://fonts.googleapis.com/css2?family=Lacquer&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Stick+No+Bills:wght@300&display=swap");
-body {
-  background-color: #ff91005b;
-  margin: 10px;
-  height: 100%;
-}
-
-header {
-  position: fixed;
-  background-color: #f27649;
-  height: 162px;
-  width: 100%;
-  margin-top: -10px;
-  z-index: 1000;
-}
-
-header #cadastro {
-  position: relative;
-  left: 90%;
-}
-
-header #registro {
-  margin-bottom: 16px;
-  margin-top: 8px;
-}
-
-header button {
-  position: relative;
-  top: 10px;
-  border: none;
-  background-color: #426CB4;
-  padding-left: 40px;
-  padding-right: 100%;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-size: 18px;
-  text-decoration: none;
-  color: white;
-}
-
-header button:hover {
-  background-color: #3F3464;
-}
-
-#preenchedor {
-  height: 130px;
-}
-
-.logo-app {
-  width: 307px;
-  height: 130px;
-  float: left;
-  vertical-align: bottom;
-}
-
-h1 {
-  color: #426CB4;
-}
-
-h2 {
-  color: #426CB4;
-  margin-top: 5%;
-}
-
-h4 {
-  color: #426CB4;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
-
-p {
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  font-size: 20px;
-  color: #f27649;
-}
-
+/*Propriedades especificas*/
+/*Mapa.html*/
+/*Ranking.html*/
 table {
   background-color: #25c0c580;
   width: 100%;
@@ -96,6 +26,7 @@ tr.terceiro {
   background-color: #8d6f37;
 }
 
+<<<<<<< HEAD:Match_Finder/css/custom.css
 .dropbtn {
   background-color: #f27649;
   color: white;
@@ -186,6 +117,8 @@ tr.terceiro {
   height: 200px;
 }
 
+=======
+>>>>>>> 0dd91b321c9f2a54af457110f35811833f97627c:Match_Finder/css/Propriedades-Especificas/prop-especificas.css
 #mapa {
   background-image: url(../images/mapa_rio.png);
   background-size: 100%;
@@ -304,10 +237,51 @@ tr.terceiro {
   width: 26%;
 }
 
+/*Perfis.html*/
+.img-perfis-direita {
+  width: 350px;
+  margin-right: 5%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  margin-left: 5%;
+  text-align: right;
+  float: right;
+}
+
+.img-perfis-esquerda {
+  width: 350px;
+  margin-right: 5%;
+  margin-top: 5%;
+  margin-left: 5%;
+  margin-bottom: 5%;
+  text-align: left;
+  float: left;
+}
+
+.descript-perfis {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 20px;
+  color: #f27649;
+  text-align: justify;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.h2-perfis-direita {
+  margin-left: 5%;
+}
+
+.espacamento {
+  height: 100px;
+}
+
+/*Pra ajustar a distancia entre os perfis*/
+/*Perfil-usuario.html*/
 .input-group-text {
   color: #426CB4;
 }
 
+<<<<<<< HEAD:Match_Finder/css/custom.css
 .grid {
   display: -ms-grid;
   display: grid;
@@ -356,3 +330,7 @@ tr.terceiro {
   grid-row: 3;
 }
 /*# sourceMappingURL=custom.css.map */
+=======
+/*Muda o padrão de cor da fonte do bootstrap*/
+/*# sourceMappingURL=prop-especificas.css.map */
+>>>>>>> 0dd91b321c9f2a54af457110f35811833f97627c:Match_Finder/css/Propriedades-Especificas/prop-especificas.css

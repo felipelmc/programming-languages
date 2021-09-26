@@ -1,7 +1,6 @@
+/*Cores e fontes*/
 @import url('https://fonts.googleapis.com/css2?family=Lacquer&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Stick+No+Bills:wght@300&display=swap');
-
-
 $laranja: #f27649;
 $laranja-escuro: #ee551d;
 $laranja-claro: #ff91005b;
@@ -10,6 +9,10 @@ $azul: #426CB4;
 $azul-escuro: #3F3464;
 $bronze: #8d6f37;
 
+/*Propriedades especificas*/
+
+
+/*Mapa.html*/
 @mixin mapa($left, $right) {
     left: $left;
     top: $right; 
@@ -27,88 +30,12 @@ $bronze: #8d6f37;
     }
 }
 
-body {
-    background-color: $laranja-claro;
-    margin: 10px;
-    height: 100%;
-}
 
-header {  
-    position: fixed;
-    background-color: $laranja;
-    height: 162px;
-    width: 100%;
-    margin-top: -10px;
-    z-index: 1000;
-
-    #cadastro {
-        position: relative;
-        left: 90%;
-
-    }
-    #registro {
-        margin-bottom: 16px;
-        margin-top: 8px;
-    }
-        button {
-            position: relative;
-            top: 10px;
-            border: none;
-            background-color: $azul;
-            padding-left: 40px;
-            padding-right: 100%;
-            padding-top: 10px;
-            padding-bottom: 10px;
-
-            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-            font-size: 18px;
-            text-decoration: none;
-            color:white;
-            &:hover {
-                background-color: $azul-escuro;
-            }
-        }
-    
-}
-
-#preenchedor {
-    height: 130px;
-}
-
-.logo-app {
-    width: 307px;
-    height: 130px;
-    float: left;
-    vertical-align: bottom;
-}
-
-
-h1 {
-    color: $azul;
-}
-
-h2 {
-    color: $azul;
-    margin-top: 5%;
-}
-
-h4 {
-    color: $azul;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
-
-
-p {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 20px;
-    color: $laranja;
-}
-
+/*Ranking.html*/
 table {
     background-color: $azul-claro;
     width: 100%;
 }
-
 tr {
     text-align: center;
 
@@ -124,6 +51,7 @@ tr {
         background-color: $bronze;
     }
 }
+<<<<<<< HEAD:Match_Finder/css/custom.scss
 
 .dropbtn {
     background-color: $laranja;
@@ -217,6 +145,8 @@ tr {
     height: 200px;
 }
 
+=======
+>>>>>>> 0dd91b321c9f2a54af457110f35811833f97627c:Match_Finder/css/Propriedades-Especificas/prop-especificas.scss
 #mapa {
     background-image: url(../images/mapa_rio.png);
     background-size: 100%;
@@ -269,6 +199,7 @@ tr {
 
 }
 
+<<<<<<< HEAD:Match_Finder/css/custom.scss
 .input-group-text {
     color: $azul;
   }
@@ -312,6 +243,45 @@ tr {
 
 
 
+=======
+>>>>>>> 0dd91b321c9f2a54af457110f35811833f97627c:Match_Finder/css/Propriedades-Especificas/prop-especificas.scss
+
+/*Perfis.html*/
+.img-perfis-direita {
+    width: 350px;
+    margin-right:5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 5%;
+    text-align:right;
+    float: right;
+}
+.img-perfis-esquerda {
+    width: 350px;
+    margin-right:5%;
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-bottom: 5%;
+    text-align:left;
+    float: left;
+}
+.descript-perfis {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+    color: $laranja;
+    text-align: justify;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.h2-perfis-direita {
+    margin-left: 5%;
+}
+.espacamento {
+    height: 100px;
+}/*Pra ajustar a distancia entre os perfis*/
 
 
-
+/*Perfil-usuario.html*/
+.input-group-text {
+    color: $azul;
+  }/*Muda o padrão de cor da fonte do bootstrap*/
