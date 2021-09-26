@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Lacquer&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Stick+No+Bills:wght@300&display=swap');
+$laranja: #f27649;
+$laranja-escuro: #ee551d;
+$laranja-claro: #ff91005b;
+$azul-claro: #25c0c580;
+$azul: #426CB4;
+$azul-escuro: #3F3464;
+$bronze: #8d6f37;
+
+/*Propriedades especificas*/
+
+
+/*Mapa.html*/
+@mixin mapa($left, $right) {
+    left: $left;
+    top: $right; 
+
+    &:hover {
+        left: $left - 8px;
+        top: $right - 16px;
+        img {
+            width: 48px;
+        }
+
+        .fotos {
+            width: 26%;
+        }
+    }
+}
+
+
+/*Ranking.html*/
+table {
+    background-color: $azul-claro;
+    width: 100%;
+}
+tr {
+    text-align: center;
+
+    &.primeiro {
+        background-color: gold;
+    }
+
+    &.segundo {
+        background-color: silver;
+    }
+
+    &.terceiro {
+        background-color: $bronze;
+    }
+}
+#mapa {
+    background-image: url(mapa_rio.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 30%;
+    top: 30%;
+
+    height: 460px;
+    width: 640px;
+
+    button {
+        position: absolute;
+
+        background-color: rgba(0, 0, 0, 0);
+        border-color: rgba(0, 0, 0, 0);
+
+        img {
+            width: 32px;
+        }
+
+        .fotos {
+            position:fixed;
+            left: 30px;
+            top: 220px;
+
+            width: 0px;
+        }
+    }
+
+    button:nth-child(1) {       
+        @include mapa(550px, 200px)
+    }
+
+    button:nth-child(2) {
+        @include mapa(300px, 300px)
+    }
+
+    button:nth-child(3) {
+        @include mapa(140px, 300px)
+    }
+
+    button:nth-child(4) {
+        @include mapa(440px, 100px)
+    }
+
+    button:nth-child(5) {
+        @include mapa(380px, 200px)
+    }
+
+}
+
+
+/*Perfis.html*/
+.img-perfis-direita {
+    width: 350px;
+    margin-right:5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 5%;
+    text-align:right;
+    float: right;
+}
+.img-perfis-esquerda {
+    width: 350px;
+    margin-right:5%;
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-bottom: 5%;
+    text-align:left;
+    float: left;
+}
+.descript-perfis {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+    color: $laranja;
+    text-align: justify;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.h2-perfis-direita {
+    margin-left: 5%;
+}
+.espacamento {
+    height: 100px;
+}/*Pra ajustar a distancia entre os perfis*/
+
+
+/*Perfil-usuario.html*/
+.input-group-text {
+    color: $azul;
+  }/*Muda o padrão de cor da fonte do bootstrap*/
+
+  .input-group-text {
+    color: $azul;
+  }
+
+.grid-perfil-pessoal {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 1600px;
+    margin: 0 auto;
+    grid-gap: 20px;
+}
+
+
+.foto {
+    grid-column: 1;
+    grid-row: 1 / 4;
+    width: 400px;
+    margin-top: 15%;
+}
+
+.col1 {
+    grid-column: 1;
+}
+
+.col2 {
+    grid-column: 2;
+    max-height: 50px;
+}
+
+
+.form-control {
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid $azul;
+    border-radius: 2rem;
+  }
+
+  .input-group-text {
+    color: #fff;
+    background-color: $azul;
+    border: 1px solid $azul;
+    border-radius: 2rem;
+  }
+
+  .form-select {
+    width: 50%;
+    border: 1px solid $azul;
+    border-radius: 2rem;
+  }
+

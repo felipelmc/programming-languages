@@ -1,0 +1,245 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Lacquer&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Stick+No+Bills:wght@300&display=swap");
+/*Propriedades especificas*/
+/*Mapa.html*/
+/*Ranking.html*/
+table {
+  background-color: #25c0c580;
+  width: 100%;
+}
+
+tr {
+  text-align: center;
+}
+
+tr.primeiro {
+  background-color: gold;
+}
+
+tr.segundo {
+  background-color: silver;
+}
+
+tr.terceiro {
+  background-color: #8d6f37;
+}
+
+#mapa {
+  background-image: url(mapa_rio.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 30%;
+  top: 30%;
+  height: 460px;
+  width: 640px;
+}
+
+#mapa button {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0);
+  border-color: rgba(0, 0, 0, 0);
+}
+
+#mapa button img {
+  width: 32px;
+}
+
+#mapa button .fotos {
+  position: fixed;
+  left: 30px;
+  top: 220px;
+  width: 0px;
+}
+
+#mapa button:nth-child(1) {
+  left: 550px;
+  top: 200px;
+}
+
+#mapa button:nth-child(1):hover {
+  left: 542px;
+  top: 184px;
+}
+
+#mapa button:nth-child(1):hover img {
+  width: 48px;
+}
+
+#mapa button:nth-child(1):hover .fotos {
+  width: 26%;
+}
+
+#mapa button:nth-child(2) {
+  left: 300px;
+  top: 300px;
+}
+
+#mapa button:nth-child(2):hover {
+  left: 292px;
+  top: 284px;
+}
+
+#mapa button:nth-child(2):hover img {
+  width: 48px;
+}
+
+#mapa button:nth-child(2):hover .fotos {
+  width: 26%;
+}
+
+#mapa button:nth-child(3) {
+  left: 140px;
+  top: 300px;
+}
+
+#mapa button:nth-child(3):hover {
+  left: 132px;
+  top: 284px;
+}
+
+#mapa button:nth-child(3):hover img {
+  width: 48px;
+}
+
+#mapa button:nth-child(3):hover .fotos {
+  width: 26%;
+}
+
+#mapa button:nth-child(4) {
+  left: 440px;
+  top: 100px;
+}
+
+#mapa button:nth-child(4):hover {
+  left: 432px;
+  top: 84px;
+}
+
+#mapa button:nth-child(4):hover img {
+  width: 48px;
+}
+
+#mapa button:nth-child(4):hover .fotos {
+  width: 26%;
+}
+
+#mapa button:nth-child(5) {
+  left: 380px;
+  top: 200px;
+}
+
+#mapa button:nth-child(5):hover {
+  left: 372px;
+  top: 184px;
+}
+
+#mapa button:nth-child(5):hover img {
+  width: 48px;
+}
+
+#mapa button:nth-child(5):hover .fotos {
+  width: 26%;
+}
+
+/*Perfis.html*/
+.img-perfis-direita {
+  width: 350px;
+  margin-right: 5%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  margin-left: 5%;
+  text-align: right;
+  float: right;
+}
+
+.img-perfis-esquerda {
+  width: 350px;
+  margin-right: 5%;
+  margin-top: 5%;
+  margin-left: 5%;
+  margin-bottom: 5%;
+  text-align: left;
+  float: left;
+}
+
+.descript-perfis {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 20px;
+  color: #f27649;
+  text-align: justify;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.h2-perfis-direita {
+  margin-left: 5%;
+}
+
+.espacamento {
+  height: 100px;
+}
+
+/*Pra ajustar a distancia entre os perfis*/
+/*Perfil-usuario.html*/
+.input-group-text {
+  color: #426CB4;
+}
+
+/*Muda o padrão de cor da fonte do bootstrap*/
+.input-group-text {
+  color: #426CB4;
+}
+
+.grid-perfil-pessoal {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  max-width: 1600px;
+  margin: 0 auto;
+  grid-gap: 20px;
+}
+
+.foto {
+  -ms-grid-column: 1;
+  grid-column: 1;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  grid-row: 1 / 4;
+  width: 400px;
+  margin-top: 15%;
+}
+
+.col1 {
+  -ms-grid-column: 1;
+  grid-column: 1;
+}
+
+.col2 {
+  -ms-grid-column: 2;
+  grid-column: 2;
+  max-height: 50px;
+}
+
+.form-control {
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid #426CB4;
+  border-radius: 2rem;
+}
+
+.input-group-text {
+  color: #fff;
+  background-color: #426CB4;
+  border: 1px solid #426CB4;
+  border-radius: 2rem;
+}
+
+.form-select {
+  width: 50%;
+  border: 1px solid #426CB4;
+  border-radius: 2rem;
+}
+/*# sourceMappingURL=prop-especificas.css.map */

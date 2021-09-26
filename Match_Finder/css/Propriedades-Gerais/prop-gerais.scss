@@ -1,0 +1,33 @@
+/*Cores e fontes*/
+@import url('https://fonts.googleapis.com/css2?family=Lacquer&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Stick+No+Bills:wght@300&display=swap');
+$laranja: #f27649;
+$laranja-escuro: #ee551d;
+$laranja-claro: #ff91005b;
+$azul-claro: #25c0c580;
+$azul: #426CB4;
+$azul-escuro: #3F3464;
+$bronze: #8d6f37;
+
+/*Propriedades Gerais*/
+body {
+    background-color: $laranja-claro;
+    margin: 10px;
+    height: 100%;
+}
+p {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+    color: $laranja;
+}
+h1 {
+    color: $azul;
+}
+h2 {
+    color: $azul;
+    margin-top: 5%;
+}
+h4 {
+    color: $azul;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
