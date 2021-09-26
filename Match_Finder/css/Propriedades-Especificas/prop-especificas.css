@@ -342,6 +342,22 @@ tr.terceiro {
   margin-right: 10px;
 }
 
+.form-control:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.form-control:focus:-ms-input-placeholder {
+  color: transparent;
+}
+
+.form-control:focus::-ms-input-placeholder {
+  color: transparent;
+}
+
+.form-control:focus::placeholder {
+  color: transparent;
+}
+
 #Username:focus {
   border-width: 2px;
   width: 80%;
@@ -349,5 +365,17 @@ tr.terceiro {
 
 #Username:focus .input-group-text {
   color: #86b7fe;
+}
+
+.padding-a {
+  padding: 10px;
+  background-color: #426CB4;
+  color: white;
+  text-decoration: none;
+}
+
+.padding-a:hover {
+  background-color: #3F3464;
+  color: white;
 }
 /*# sourceMappingURL=prop-especificas.css.map */

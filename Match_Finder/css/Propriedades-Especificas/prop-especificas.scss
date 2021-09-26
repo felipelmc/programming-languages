@@ -279,10 +279,28 @@ tr {
     border-width: 2px;
     margin-right: 10px;
 }
+
+.form-control:focus::placeholder{
+    color: transparent;
+}
+
 #Username:focus{
     border-width: 2px;
     width:80%;
 }
 #Username:focus .input-group-text{
     color:#86b7fe ;
+}
+
+.padding-a {
+    padding: 10px;
+    background-color: $azul;
+    color: white;
+    text-decoration: none;
+    
+}
+
+.padding-a:hover{
+    background-color: $azul-escuro;
+    color: white;
 }
