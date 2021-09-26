@@ -11,6 +11,37 @@ $bronze: #8d6f37;
 /*Propriedades especificas*/
 
 
+/*pagina-inicial.html*/
+
+#cadastro2 {
+    margin: auto;
+
+}
+#registro2 {
+    margin-bottom: 16px;
+    margin-top: 8px;
+}
+    button {
+        position: relative;
+        top: 10px;
+        border: none;
+        background-color: $azul;
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 18px;
+        text-decoration: none;
+        color:white;
+        &:hover {
+            background-color: $azul-escuro;
+        }
+    }
+
+
+
 /*Mapa.html*/
 @mixin mapa($left, $right) {
     left: $left;
