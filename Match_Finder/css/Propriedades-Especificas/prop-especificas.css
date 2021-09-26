@@ -328,4 +328,26 @@ tr.terceiro {
   color: #426CB4;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
+
+/*Registro.html*/
+.form-control:focus {
+  color: #212529;
+  background-color: #fff;
+  border-color: #86b7fe;
+  outline: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  width: 102%;
+  border-width: 2px;
+  margin-right: 10px;
+}
+
+#Username:focus {
+  border-width: 2px;
+  width: 80%;
+}
+
+#Username:focus .input-group-text {
+  color: #86b7fe;
+}
 /*# sourceMappingURL=prop-especificas.css.map */
