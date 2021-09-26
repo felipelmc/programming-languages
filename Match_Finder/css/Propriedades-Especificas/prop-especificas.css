@@ -257,4 +257,9 @@ tr.terceiro {
   margin-bottom: auto;
   margin-left: auto;
 }
+
+.fonte-color {
+  color: #426CB4;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
 /*# sourceMappingURL=prop-especificas.css.map */
