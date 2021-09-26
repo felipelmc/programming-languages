@@ -243,7 +243,18 @@ tr.terceiro {
   border-radius: 2rem;
 }
 
-
-
-
+.form-signin {
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  padding-top: 0px;
+  padding-right: 15px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+  margin: auto;
+  margin-top: auto;
+  margin-right: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+}
 /*# sourceMappingURL=prop-especificas.css.map */
