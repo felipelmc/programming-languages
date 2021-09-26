@@ -2,6 +2,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Lacquer&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Stick+No+Bills:wght@300&display=swap");
 /*Propriedades Gerais*/
+a {
+  text-decoration: none;
+}
+
 body {
   background-color: #ff91005b;
   margin: 10px;

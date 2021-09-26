@@ -67,30 +67,13 @@ $bronze: #8d6f37;
         .fotos {
             width: 26%;
         }
+
+        .legenda-quadra {
+            font-size: 20px;
+        }
     }
 }
 
-
-/*Ranking.html*/
-table {
-    background-color: $azul-claro;
-    width: 100%;
-}
-tr {
-    text-align: center;
-
-    &.primeiro {
-        background-color: gold;
-    }
-
-    &.segundo {
-        background-color: silver;
-    }
-
-    &.terceiro {
-        background-color: $bronze;
-    }
-}
 #mapa {
     background-image: url(mapa_rio.png);
     background-size: 100%;
@@ -114,10 +97,21 @@ tr {
 
         .fotos {
             position:fixed;
-            left: 30px;
+            left: 2%;
             top: 220px;
 
             width: 0px;
+        }
+
+        .legenda-quadra {
+            position: fixed;
+            left: 2%;
+            top: 500px;
+            text-align: left;
+
+            font-size: 0px;
+
+
         }
     }
 
@@ -144,25 +138,54 @@ tr {
 }
 
 
+/*Ranking.html*/
+table {
+    background-color: $azul-claro;
+    width: 100%;
+}
+tr {
+    text-align: center;
+
+    &.primeiro {
+        background-color: gold;
+    }
+
+    &.segundo {
+        background-color: silver;
+    }
+
+    &.terceiro {
+        background-color: $bronze;
+    }
+}
+
+
+
 /*Perfis.html*/
 .perfis-flex {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
 }
-
+$margin-perfis:60px;
 .img-perfis{
     min-width: 350px;
-    max-width: 350px;
-    margin-top: 60px;
+    margin-top:$margin-perfis;
     margin-bottom: 5%;
 }
 
 .h2-perfis{
-    margin-top: 60px;
+    margin-top:$margin-perfis;
 }
 
+
 /*Perfil-usuario.html*/
+.mini-img{
+    width: 6%;
+}
+.mini-img2{
+    width: 30%;
+}
 .input-group-text {
     color: $azul;
   }/*Muda o padrão de cor da fonte do bootstrap*/
@@ -170,32 +193,18 @@ tr {
 
 .grid-perfil-pessoal {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr 1fr 1fr;
     max-width: 1600px;
     margin: 0 auto;
-    grid-gap: 20px;
-}
-
-
-.foto {
-    grid-column: 1;
-    grid-row: 1 / 4;
-    width: 400px;
-    margin-top: 15%;
-}
-
-.col1 {
-    grid-column: 1;
-}
-
-.col2 {
-    grid-column: 2;
-    max-height: 50px;
+    grid-gap: 30px;
+    border-width: 2px;
+    border-color: $azul;
+    border-style: dotted;
 }
 
 
 .form-control {
-    width: 100%;
+    width: 70%;
     background-color: #fff;
     border: 1px solid $azul;
     border-radius: 2rem;
@@ -265,7 +274,6 @@ tr {
     padding: 10px;
     background-color: $azul;
     color: white;
-    text-decoration: none;
     
 }
 

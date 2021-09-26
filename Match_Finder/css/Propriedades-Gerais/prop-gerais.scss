@@ -10,6 +10,9 @@ $azul-escuro: #3F3464;
 $bronze: #8d6f37;
 
 /*Propriedades Gerais*/
+a {
+    text-decoration:none;
+}
 body {
     background-color: $laranja-claro;
     margin: 10px;
