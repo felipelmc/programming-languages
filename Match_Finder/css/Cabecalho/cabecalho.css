@@ -100,4 +100,12 @@ header button:hover {
 }
 
 /*Queriamos manter a posição do cabeçalho fixa no topo, mas queriamos que nao tivesse texto ali pois ficaria inacessível; Usamos esse preenchedor pra preencher e impedir o texto de ocupar.*/
+.h1-titulos {
+  text-align: center;
+  color: white;
+  left: 45%;
+  top: 10%;
+  font-size: 90px;
+  position: absolute;
+}
 /*# sourceMappingURL=cabecalho.css.map */

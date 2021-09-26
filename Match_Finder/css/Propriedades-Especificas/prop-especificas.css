@@ -238,6 +238,7 @@ tr.terceiro {
 
 .img-perfis {
   min-width: 350px;
+  max-width: 350px;
   margin-top: 60px;
   margin-bottom: 5%;
 }
