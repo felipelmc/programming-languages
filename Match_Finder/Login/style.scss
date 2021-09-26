@@ -1,15 +1,8 @@
 $laranja1 : #fd4b05e1;
 $black: #1B2029;
 $b: rgb(250, 251, 255);
-$laranja: #f27649;
-$laranja-escuro: #ee551d;
-$laranja-claro: #ff91005b;
-$azul-claro: #25c0c580;
-$azul: #426CB4;
-$azul-escuro: #3F3464;
-$bronze: #8d6f37;
 
-body {
+.form-background {
     background: $laranja1;
     color: $b;
    
@@ -34,6 +27,3 @@ body {
     
 }
 
-footer{
-    color: chartreuse;
-}
