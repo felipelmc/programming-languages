@@ -210,11 +210,11 @@ tr.terceiro {
   color: #426CB4;
 }
 
-.grid {
+.grid-perfil-pessoal {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
   max-width: 1600px;
   margin: 0 auto;
   grid-gap: 20px;
@@ -226,8 +226,13 @@ tr.terceiro {
   -ms-grid-row: 1;
   -ms-grid-row-span: 3;
   grid-row: 1 / 4;
-  max-width: 100%;
+  width: 400px;
   margin-top: 15%;
+}
+
+.col1 {
+  -ms-grid-column: 1;
+  grid-column: 1;
 }
 
 .col2 {
@@ -236,25 +241,23 @@ tr.terceiro {
   max-height: 50px;
 }
 
-.col3-row1 {
-  -ms-grid-column: 3;
-  grid-column: 3;
-  -ms-grid-row: 1;
-  grid-row: 1;
-  margin-top: 15%;
+.form-control {
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid #426CB4;
+  border-radius: 2rem;
 }
 
-.col3-row2 {
-  -ms-grid-column: 3;
-  grid-column: 3;
-  -ms-grid-row: 2;
-  grid-row: 2;
+.input-group-text {
+  color: #fff;
+  background-color: #426CB4;
+  border: 1px solid #426CB4;
+  border-radius: 2rem;
 }
 
-.col3-row3 {
-  -ms-grid-column: 3;
-  grid-column: 3;
-  -ms-grid-row: 3;
-  grid-row: 3;
+.form-select {
+  width: 50%;
+  border: 1px solid #426CB4;
+  border-radius: 2rem;
 }
 /*# sourceMappingURL=prop-especificas.css.map */

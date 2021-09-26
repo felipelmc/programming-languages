@@ -161,9 +161,9 @@ tr {
     color: $azul;
   }
 
-.grid {
+.grid-perfil-pessoal {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     max-width: 1600px;
     margin: 0 auto;
     grid-gap: 20px;
@@ -173,8 +173,12 @@ tr {
 .foto {
     grid-column: 1;
     grid-row: 1 / 4;
-    max-width: 100%;
+    width: 400px;
     margin-top: 15%;
+}
+
+.col1 {
+    grid-column: 1;
 }
 
 .col2 {
@@ -182,18 +186,24 @@ tr {
     max-height: 50px;
 }
 
-.col3-row1 {
-    grid-column: 3;
-    grid-row: 1;
-    margin-top: 15%;
-}
 
-.col3-row2 {
-    grid-column: 3;
-    grid-row: 2;
-}
+.form-control {
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid $azul;
+    border-radius: 2rem;
+  }
 
-.col3-row3 {
-    grid-column: 3;
-    grid-row: 3;
-}
+  .input-group-text {
+    color: #fff;
+    background-color: $azul;
+    border: 1px solid $azul;
+    border-radius: 2rem;
+  }
+
+  .form-select {
+    width: 50%;
+    border: 1px solid $azul;
+    border-radius: 2rem;
+  }
+
