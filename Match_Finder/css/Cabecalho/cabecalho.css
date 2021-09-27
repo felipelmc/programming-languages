@@ -4,25 +4,42 @@
 @import url("https://fonts.googleapis.com/css2?family=Stick+No+Bills:wght@300&display=swap");
 /*CSS Cabeçalho*/
 header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: fixed;
   background-color: #f27649;
-  height: 162px;
+  height: 172px;
   width: 100%;
   margin-top: -10px;
+  margin-left: -10px;
   z-index: 1000;
 }
 
+header .titulo {
+  z-index: 1100;
+}
+
+header .titulo h1 {
+  color: white;
+}
+
 header #cadastro {
-  position: relative;
   left: 90%;
 }
 
-header #registro {
+header #cadastro #registro {
   margin-bottom: 16px;
   margin-top: 8px;
 }
 
-header button {
+header #cadastro button {
   position: relative;
   top: 10px;
   border: none;
@@ -37,7 +54,7 @@ header button {
   color: white;
 }
 
-header button:hover {
+header #cadastro button:hover {
   background-color: #3F3464;
 }
 
@@ -51,14 +68,12 @@ header button:hover {
   background-color: #f27649;
   color: white;
   padding: 16px;
+  padding-bottom: 26px;
   font-size: 16px;
   border: none;
 }
 
 .dropdown {
-  position: absolute;
-  left: -10px;
-  top: -10px;
   display: inline-block;
 }
 
@@ -96,7 +111,7 @@ header button:hover {
 }
 
 #preenchedor {
-  height: 162px;
+  height: 172px;
 }
 
 /*Queriamos manter a posição do cabeçalho fixa no topo, mas queriamos que nao tivesse texto ali pois ficaria inacessível; Usamos esse preenchedor pra preencher e impedir o texto de ocupar.*/
