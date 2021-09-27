@@ -208,6 +208,7 @@ $margin-perfis:60px;
 /*Perfil-usuario.html*/
 .mini-img{
     width: 65%;
+    top: -20px;
 }
 .mini-img2{
     height: 80%;
@@ -344,7 +345,116 @@ $margin-perfis:60px;
     color: white;
 }
 
+/*Chat*/
+.chat-div{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    width: 80%;
+    box-shadow: 2px 2px 20px 0px rgba(0, 0, 0, 0.4);
+    background-color: white;
 
 
+    margin: 1% 10%;
+    
+}
 
+.chat-div .div-conv-prim{
+    display: grid;
+    grid-column: 2/4;
+    grid-row: 2/7;
+    border-left-width: 1px;
+    border-color: lightgray;
+    border-left-style: solid;
 
+}
+.chat-div .div-conv-sec{
+    border-left-width: 2px;
+    height: 80px;
+    width: 300px;
+    border-bottom-style: solid;
+    border-width: 1px;
+    border-color: lightgray;
+    margin-right: 20px;
+    margin-left: 5px;
+}
+
+.chat-div .div-conv-terc{
+    grid-column: 1/4;
+    grid-row: 1;
+
+    height: 100px;
+    background-image: linear-gradient(to top,white 20%,#86b7fe 80%);
+
+    
+}
+.chat-div .div-conv-quat{
+    grid-column: 1/4;
+    grid-row: 7;
+
+    height: 100px;
+    background-image: linear-gradient(to bottom,white 20%,#86b7fe 80%);
+
+    
+}
+.chat-miniatures-small{
+    width: 50px;
+    margin: 10px;
+    margin: 15px 10px;
+}
+
+.chat-div .div-conv-sec:hover{
+    .chat-miniatures-small{
+        width: 70px;
+        margin: 10px;
+        margin: 5px 10px;
+    }
+    
+}
+
+#primeiro-chat{
+    border-top-style: solid;
+}
+#input-chat{
+    width:80%;
+
+}
+#share{
+    width: 80%;
+    margin-bottom: 8px;
+}
+.chat-div form{
+    margin-bottom: -50px;
+    margin-left: 60px;
+    margin-right: -25px;
+    
+}
+.chat-div form button{
+    width: 8%;
+    outline: none;
+    border: none;
+    background-color: white;
+}
+.chat-div form button:hover{
+    img{
+        width: 90% !important;
+    }
+}
+#chat-titulo{
+    font-size: 24px;
+    color: black;
+    text-align: center;
+}
+.mensagem{
+    float: left;
+    padding: 10px;
+    background-color:$azul;
+    margin-left: 20px;
+    border-radius: 10px;
+}
+.mensagem-user{
+    float: right;
+    padding: 10px;
+    background-color: $azul-claro;
+    margin-right: 20px;
+    border-radius: 10px;
+}

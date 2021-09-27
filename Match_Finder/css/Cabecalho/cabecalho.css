@@ -65,7 +65,7 @@ header #cadastro button:hover {
 }
 
 .dropbtn {
-  background-color: #f27649;
+  background-color: transparent;
   color: white;
   padding: 16px;
   padding-bottom: 26px;
@@ -122,5 +122,30 @@ header #cadastro button:hover {
   top: 10%;
   font-size: 90px;
   position: absolute;
+}
+
+#button-perfil {
+  position: relative;
+  top: 10px;
+  border: none !important;
+  background-color: transparent !important;
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 18px;
+  text-decoration: none !important;
+  color: white;
+  top: 30px;
+}
+
+#button-perfil:hover {
+  color: blue;
+}
+
+#div-foto {
+  width: 200px;
+  height: 100%;
 }
 /*# sourceMappingURL=cabecalho.css.map */
