@@ -164,7 +164,7 @@ tr {
 /*Perfis.html*/
 .perfis-flex {
     display: flex;
-    justify-content: space-between;
+    justify-content:space-around;
     align-items: flex-start;
 }
 $margin-perfis:60px;
@@ -179,6 +179,28 @@ $margin-perfis:60px;
     margin-top:$margin-perfis;
 }
 
+.icones {
+    margin-top:$margin-perfis;
+    margin-bottom: px;
+    width: 60px;
+    height: 60px;
+}
+
+.float-right {
+    float: right;
+}
+
+.float-left {
+    float: left;
+}
+
+.imagem-direita {
+    margin-left: 5%;
+}
+
+.lista {
+    margin-right: 30px;
+}
 
 /*Perfil-usuario.html*/
 .mini-img{
@@ -294,6 +316,8 @@ $margin-perfis:60px;
     background-color: $azul-escuro;
     color: white;
 }
+
+
 
 
 

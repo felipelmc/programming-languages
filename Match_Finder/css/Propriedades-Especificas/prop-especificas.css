@@ -228,9 +228,8 @@ tr.terceiro {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
@@ -244,6 +243,29 @@ tr.terceiro {
 
 .h2-perfis {
   margin-top: 60px;
+}
+
+.icones {
+  margin-top: 60px;
+  margin-bottom: px;
+  width: 60px;
+  height: 60px;
+}
+
+.float-right {
+  float: right;
+}
+
+.float-left {
+  float: left;
+}
+
+.imagem-direita {
+  margin-left: 5%;
+}
+
+.lista {
+  margin-right: 30px;
 }
 
 /*Perfil-usuario.html*/

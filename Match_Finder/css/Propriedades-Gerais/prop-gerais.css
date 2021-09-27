@@ -31,4 +31,12 @@ h4 {
   color: #426CB4;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
+
+ul {
+  list-style: none;
+}
+
+li {
+  margin-bottom: -2rem;
+}
 /*# sourceMappingURL=prop-gerais.css.map */
