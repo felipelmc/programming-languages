@@ -23,7 +23,7 @@ $bronze: #8d6f37;
 
 .grid-index {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr 1fr;
     grid-gap:20px;
     margin: 0 auto;
     max-width: 1200px;
@@ -184,7 +184,7 @@ $margin-perfis:60px;
 
 .icones {
     margin-top:$margin-perfis;
-    margin-bottom: px;
+    margin-bottom: 0px;
     width: 60px;
     height: 60px;
 }
