@@ -11,22 +11,36 @@ $bronze: #8d6f37;
 
 /*CSS Cabeçalho*/
 header {  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
     position: fixed;
     background-color: $laranja;
-    height: 162px;
+    height: 172px;
     width: 100%;
     margin-top: -10px;
+    margin-left: -10px;
     z-index: 1000;
 
+    .titulo {
+        z-index: 1100;
+
+        h1 {
+            color: white;    
+        }
+    }
+
     #cadastro {
-        position: relative;
+        //position: relative;
         left: 90%;
 
-    }
-    #registro {
-        margin-bottom: 16px;
-        margin-top: 8px;
-    }
+        #registro {
+            margin-bottom: 16px;
+            margin-top: 8px;
+        }
+
         button {
             position: relative;
             top: 10px;
@@ -45,6 +59,10 @@ header {
                 background-color: $azul-escuro;
             }
         }
+
+    }
+    
+        
     
 }
 .logo-app {
@@ -56,14 +74,12 @@ header {
     background-color: $laranja;
     color: white;
     padding: 16px;
+    padding-bottom: 26px;
     font-size: 16px;
     border: none;
 
   }
 .dropdown {
-    position: absolute;
-    left: -10px;
-    top: -10px;
     display: inline-block;
 
     &:hover {
@@ -99,7 +115,7 @@ header {
       }
   } 
 #preenchedor {
-    height: 162px;
+    height: 172px;
 }  /*Queriamos manter a posição do cabeçalho fixa no topo, mas queriamos que nao tivesse texto ali pois ficaria inacessível; Usamos esse preenchedor pra preencher e impedir o texto de ocupar.*/
 
 .h1-titulos {
