@@ -1,39 +1,6 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="css/main.css" rel="stylesheet" />
-    <title>Mapa</title>
-    <link rel='icon' href='favicon.ico' type='image/x-icon' sizes="32x32" />
-</head>
-
-<body>
-    <header>
-        <div class="dropdown">
-            <button class="dropbtn">
-                <img class="logo-app" src="images/logo.png" alt="Match Finder Logo" />
-            </button>
-            <div class="dropdown-content">
-                <a href="index.html">Início</a>
-                <a href="projeto.html">O projeto</a>
-                <a href="mapa.html">Mapa</a>
-                <a href="ranking.html">Ranking</a>
-                <a href="perfis.html">Os desenvolvedores</a>
-            </div>
-        </div>
-        <div class="titulo">  
-            <h1>MAPA</h1>
-        </div>
-        <div id="cadastro">
-            <button id="registro" onclick="window.location='registro.html';"> Registro</button>
-            <button id="login" onclick="window.location='login.html';"> Login</button>
-        </div>
-    </header>
-
-    <div id="preenchedor"></div>
-
+{% extends "main.html" %}
+{% block body %}
+{% load static %}
     <div id="mapa">
         <button>
             <img src="images/mfinder32.png" alt="Quadra esportiva"/>
@@ -81,11 +48,4 @@
             </strong>
         </button>
     </div>
-
-    <footer class="my-5 pt-5 text-muted text-center text-small">
-        <p class="mb-1">&copy; Match Finder - 2021</p>
-    </footer>
-
-<script src="js/boostrap.bundle.min.js"></script>
-</body>
-</html>
+{% endblock %}
