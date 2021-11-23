@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{% static 'styles/main.css' %}" rel="stylesheet" />
+    <title>{{title}}</title>
+    <link rel='icon' href="{% static 'images/favicon.ico}" type='image/x-icon' sizes="32x32" />
+</head>
+
+<body>
+    {% include "header.html" %}
+    
+    {% block body %}
+
+    {% endblock %}
+
+
+
+    <footer class="my-5 pt-5 text-muted text-center text-small">
+        <p class="mb-1">&copy; Match Finder - 2021</p>
+    </footer>
+
+<script src="js/boostrap.bundle.min.js"></script>
+
+</body>
+</html>

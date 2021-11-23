@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/main.css" rel="stylesheet" />
+    <title>Perfil pessoal</title>
+    <link rel='icon' href='favicon.ico' type='image/x-icon' sizes="32x32" />
+</head>
+
+<body>
+    <header>
+        <div class="dropdown">
+            <button class="dropbtn"><img class="logo-app" src="images/logo.png" alt="Match Finder Logo" /></button>
+            <div class="dropdown-content">
+                <a href="index.html">Início</a>
+                <a href="projeto.html">O projeto</a>
+                <a href="mapa.html">Mapa</a>
+                <a href="ranking.html">Ranking</a>
+                <a href="perfis.html">Os desenvolvedores</a>
+            </div>
+        </div>
+        <div class="dropdown" id="div-foto">
+            <button id="button-perfil"><img class="mini-img" src="images/guilherme-circular.png" id="registro" alt="guilherme-circular"></button>
+            <div class="dropdown-content">
+                <a href="perfil-usuario.html">Meu perfil</a>
+                <a href="chat.html">Chat</a>
+            </div>
+        </div>
+    </header>
+    
+    <div id="preenchedor"></div>
+<h2 style="margin-top: 1%;">Informações Pessoais:</h2>
+<section class="grid-perfil-pessoal">
+    <img class="mini-img2" src="images/guilherme-circular.png" alt="guilhereme guilherme-circular2">
+    <p class="input-group flex-nowrap" id="user">
+        <span class="input-group-text" id="addon-wrapping">@</span>
+        <input type="text" class="form-control" placeholder="Nome de usuário" aria-label="Nome de usuário" aria-describedby="addon-wrapping">
+    </p>
+
+    <p class="input-group mb-3" id="status">
+        <span class="input-group-text" id="inputGroup-sizing-default">Status</span>
+        <input type="text" class="form-control" id="Username" aria-label="">
+    </p>
+
+    <p class="form-floating mb-3" id="sobre-mim" >
+        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+        <label for="floatingTextarea">Sobre mim</label>
+    </p>
+    <div id="horario">
+    <h4 class="mt-3" >Horários disponíveis</h4>
+    <p class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" value="option1">
+        <label class="form-check-label">Manhã</label>
+    </p>
+    <br>
+    <p class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox"  value="option2">
+        <label class="form-check-label">Tarde</label>
+    </p>
+    <br>
+    <p class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox"  value="option2">
+        <label class="form-check-label">Noite</label>
+    </p>
+
+
+    </div>
+    <p class="form-check form-switch" id="switch">
+        <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+        <label class="form-check-label" for="flexSwitchCheckDefault">Buscando a próxima partida</label>
+    </p>
+    <div class="form-floating " id="formulario">
+        <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+            <option selected>Esporte favorito</option>
+            <option value="1">Futebol</option>
+            <option value="2">Futsal</option>
+            <option value="3">Basquete</option>
+            <option value="4">Vôlei</option>
+            <option value="5">Vôlei de praia</option>
+            <option value="6">Handebol</option>
+            <option value="7">Altinha</option>
+            <option value="8">Beisebol</option>
+            <option value="9">Golfe</option>
+            <option value="10">Futmesa</option>
+        </select>
+        <label for="floatingSelect">Clique para escolher</label>
+    </div>
+</section>
+
+    <footer class="my-5 pt-5 text-muted text-center text-small">
+        <p class="mb-1">&copy; Match Finder - 2021</p>
+    </footer>
+
+<script src="js/boostrap.bundle.min.js"></script>
+
+</body>
+</html>

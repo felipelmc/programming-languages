@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/main.css" rel="stylesheet" />
+    <title>Perfil pessoal</title>
+    <link rel='icon' href='favicon.ico' type='image/x-icon' sizes="32x32" />
+</head>
+
+<body>
+    <header>
+        <div class="dropdown">
+            <button class="dropbtn"><img class="logo-app" src="images/logo.png" alt="Match Finder Logo" /></button>
+            <div class="dropdown-content">
+                <a href="index.html">Início</a>
+                <a href="projeto.html">O projeto</a>
+                <a href="mapa.html">Mapa</a>
+                <a href="ranking.html">Ranking</a>
+                <a href="perfis.html">Os desenvolvedores</a>
+            </div>
+        </div>
+        <div class="dropdown" id="div-foto">
+            <button id="button-perfil"><img class="mini-img" src="images/guilherme-circular.png" id="registro" alt="guilherme-circular"></button>
+            <div class="dropdown-content">
+                <a href="perfil-usuario.html">Meu perfil</a>
+                <a href="chat.html">Chat</a>
+            </div>
+        </div>
+    </header>
+    <div id="preenchedor"></div>
+    
+    <div class="chat-div">
+        <div class="div-conv-prim">
+            <div><strong class="mensagem">Mensagem exemplo 1</strong></div>
+            <div><strong class="mensagem">Mensagem exemplo 2</strong></div>
+            <div><strong class="mensagem-user">Mensagem exemplo 3</strong></div>
+            <div><strong class="mensagem">Mensagem exemplo 4</strong></div>
+            <div><strong class="mensagem-user">Mensagem exemplo 5</strong></div>
+ 
+            <div><form>
+                <input id="input-chat" type="text">
+                <button>
+                    <img id="share" src="images/share-square.png" alt="Enviar"/>
+                </button>
+            </form></div>
+        </div>
+        <div class="div-conv-terc"><p id="chat-titulo">Chat Match Finder (estático)</p></div>
+        <div class="div-conv-sec" id="primeiro-chat"><img class="chat-miniatures-small" src="images/circular(1).png" alt="circular"><strong>Janaina</strong></div>
+        <div class="div-conv-sec"><img class="chat-miniatures-small" src="images/circular(2).png" alt="circular"><strong>Luca</strong></div>
+        <div class="div-conv-sec"><img class="chat-miniatures-small" src="images/circular(3).png" alt="circular"><strong>Felipe</strong></div>
+        <div class="div-conv-sec"><img class="chat-miniatures-small" src="images/circular(4).png" alt="circular"><strong>Qaudra Macae</strong></div>
+        <div class="div-conv-sec"><img class="chat-miniatures-small" src="images/circular(5).png" alt="circular"><strong>Basquete Quinta</strong></div>
+        <div class="div-conv-quat" ></div>
+    </div>
+
+
+
+    <footer class="my-5 pt-5 text-muted text-center text-small">
+        <p class="mb-1">&copy; Match Finder - 2021</p>
+    </footer>
+
+<script src="js/boostrap.bundle.min.js"></script>
+
+</body>
+</html>

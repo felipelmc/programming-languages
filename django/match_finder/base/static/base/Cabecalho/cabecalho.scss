@@ -1,0 +1,150 @@
+/*Cores e fontes*/
+@import url('https://fonts.googleapis.com/css2?family=Lacquer&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Stick+No+Bills:wght@300&display=swap');
+$laranja: #f27649;
+$laranja-escuro: #ee551d;
+$laranja-claro: #ff91005b;
+$azul-claro: #25c0c580;
+$azul: #426CB4;
+$azul-escuro: #3F3464;
+$bronze: #8d6f37;
+
+/*CSS Cabeçalho*/
+header {  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+    position: fixed;
+    background-color: $laranja;
+    height: 172px;
+    width: 100%;
+    margin-top: -10px;
+    margin-left: -10px;
+    z-index: 1000;
+
+    .titulo {
+        z-index: 1100;
+
+        h1 {
+            color: white;    
+        }
+    }
+
+    #cadastro {
+        //position: relative;
+        left: 90%;
+
+        #registro {
+            margin-bottom: 16px;
+            margin-top: 8px;
+        }
+
+        button {
+            position: relative;
+            top: 10px;
+            border: none;
+            background-color: $azul;
+            padding-left: 40px;
+            padding-right: 100%;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 18px;
+            text-decoration: none;
+            color:white;
+            &:hover {
+                background-color: $azul-escuro;
+            }
+        }
+
+    }
+    
+        
+    
+}
+.logo-app {
+    width: 307px;
+    height: 130px;
+    vertical-align: bottom;
+}
+.dropbtn {
+    background-color: transparent;
+    color: white;
+    padding: 16px;
+    padding-bottom: 26px;
+    font-size: 16px;
+    border: none;
+
+  }
+.dropdown {
+    display: inline-block;
+
+    &:hover {
+        .dropdown-content {
+            display: block;
+            top: 172px;
+        }
+
+        .dropbtn {
+            background-color: $laranja;
+            box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.2);
+        }
+    }
+  } 
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: $laranja;
+    min-width: 339px;
+    min-height: 10px;
+    box-shadow: 5px 0px 0px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+
+    a {
+        color: black;
+        padding: 12px 16px;
+        display: block;
+
+        &:hover {
+            background-color: $azul;
+            color: white;
+        }
+      }
+  } 
+#preenchedor {
+    height: 172px;
+}  /*Queriamos manter a posição do cabeçalho fixa no topo, mas queriamos que nao tivesse texto ali pois ficaria inacessível; Usamos esse preenchedor pra preencher e impedir o texto de ocupar.*/
+
+.h1-titulos {
+    text-align: center;
+    color: white;
+    left: 45%;
+    top: 10%;
+    font-size: 90px;
+    position:absolute;
+}
+
+#button-perfil{
+    position: relative;
+    top: 10px;
+    border: none !important;
+    background-color: transparent !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 18px;
+    text-decoration: none !important;
+    color:white;
+    top:30px;
+}
+#button-perfil:hover{
+    color: blue;
+}
+#div-foto{
+    width: 200px;
+    height: 100%;
+}
