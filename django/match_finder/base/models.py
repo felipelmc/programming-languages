@@ -1,4 +1,5 @@
 from django.db import models
+from django.contrib.auth.hashers import make_password
 
 class Usuario(models.Model):
     ip_usuario = models.GenericIPAddressField()
@@ -6,7 +7,7 @@ class Usuario(models.Model):
     sobrenome = models.CharField(max_length=80)
     email = models.EmailField(max_length=80)
     username = models.CharField(max_length=15)
-    #senha = 
+    #hash_senha = make_password()
     CEP = models.IntegerField()
     cidade = models.CharField(max_length=80)
     estado = models.CharField(max_length=80)
