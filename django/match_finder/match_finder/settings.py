@@ -72,6 +72,7 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'match_finder.wsgi.application'
 
+AUTH_USER_MODEL = 'base.Usuario'
 
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
