@@ -1,6 +1,6 @@
 from typing_extensions import Required
 from django.db import models
-from django.contrib.auth.hashers import make_password
+from django.contrib.auth.models import AbstractBaseUser, BaseUserManager, PermissionsMixin
 
 class UsuarioManager(BaseUserManager):
     def create_user(self,username,email,telefone,primeiro_nome,sobrenome,password=None):
@@ -16,7 +16,7 @@ class UsuarioManager(BaseUserManager):
         user.set_password(password)
         user.save(using=self._db)
         return user
-    
+
     def create_superuser(self,username,email,telefone,primeiro_nome,sobrenome,password=None):
         user = self.create_user(
             username=username,
@@ -29,22 +29,22 @@ class UsuarioManager(BaseUserManager):
         user.is_superuser = True
         user.save(using=self._db)
         return user
+
 class Usuario(AbstractBaseUser):
     ip_usuario = models.GenericIPAddressField()
-    primeiro_nome = models.CharField(max_length=80)
-    sobrenome = models.CharField(max_length=80)
-    email = models.EmailField(max_length=80)
-    username = models.CharField(max_length=15)
-    #hash_senha = make_password()
+    primeiro_nome = models.CharField(max_length=80, verbose_name='primeiro_nome')
+    sobrenome = models.CharField(max_length=80,verbose_name='sobrenome')
+    email = models.EmailField(max_length=80,verbose_name='email', unique=True)
+    username = models.CharField(max_length=15,verbose_name='username', unique=True)
+    telefone = models.CharField(max_length=15,verbose_name='telefone', unique=True)
+    #senha = 
     CEP = models.IntegerField()
     cidade = models.CharField(max_length=80)
-    estado = models.CharField(max_length=80)
-    status = models.CharField(max_length=150)
-    fav_esport = models.CharField(max_length=80)
-    altura = models.FloatField()
     idade = models.IntegerField()
     peso = models.FloatField()
     genero = models.SmallIntegerField()
+
+
     is_superuser = models.BooleanField(default=False)
 
     USERNAME_FIELD = 'username'
@@ -54,11 +54,3 @@ class Usuario(AbstractBaseUser):
 class Quadra(models.Model):
     tipo = models.CharField(max_length=80)
     rua = models.CharField(max_length=80)
-    CEP = models.IntegerField()
-    cidade = models.CharField(max_length=80)
-    estado = models.CharField(max_length=80)
-    alugada = models.BooleanField(max_length=3)
-    estrelas = models.IntegerField() # 1 - 5
-    valor_hora = models.IntegerField()
-    horario_funcionamento = models.IntegerField()
-    descricao = models.TextField() 
