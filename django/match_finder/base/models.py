@@ -29,23 +29,25 @@ class UsuarioManager(BaseUserManager):
         user.is_superuser = True
         user.save(using=self._db)
         return user
+    
 class Usuario(AbstractBaseUser):
     ip_usuario = models.GenericIPAddressField(max_length=45,null=True,blank=True)
     primeiro_nome = models.CharField(max_length=80, verbose_name='primeiro_nome')
     sobrenome = models.CharField(max_length=80,verbose_name='sobrenome')
     email = models.EmailField(max_length=80,verbose_name='email', unique=True)
     username = models.CharField(max_length=15,verbose_name='username', unique=True)
-    telefone = models.CharField(max_length=15,verbose_name='telefone', unique=True)
-    #senha = 
+    telefone = models.CharField(max_length=15,verbose_name='telefone', unique=True, default=None)
     CEP = models.CharField(max_length=8,verbose_name='CEP')
     cidade = models.CharField(max_length=80)
     estado = models.CharField(max_length=80)
     status = models.CharField(max_length=150)
+    esportes_praticados = models.CharField(max_length=150, null=True, blank=True)
     fav_esport = models.CharField(max_length=80)
     altura = models.IntegerField(default=0)
     idade = models.IntegerField(default=0)
     peso = models.FloatField(default=0)
     genero = models.CharField(max_length = 1 ,default=0)
+    imagem = models.ImageField(default=None)
     is_superuser = models.BooleanField(default=False)
 
     USERNAME_FIELD = 'username'
@@ -58,8 +60,10 @@ class Quadra(models.Model):
     CEP = models.IntegerField()
     cidade = models.CharField(max_length=80)
     estado = models.CharField(max_length=80)
-    alugada = models.BooleanField(max_length=3)
-    estrelas = models.IntegerField() # 1 - 5
-    valor_hora = models.IntegerField()
-    horario_funcionamento = models.IntegerField()
-    descricao = models.TextField() 
+    alugada = models.BooleanField(default=False)
+    telefone = models.CharField(max_length=15,verbose_name='telefone', unique=True, default=None)
+    estrelas = models.IntegerField(default=0) # 0 - 5
+    valor_hora = models.IntegerField(default=0)
+    horario_abertura = models.IntegerField(default=0)
+    horario_fechamento = models.IntegerField(default=0)
+    descricao = models.TextField(max_length=80) 
