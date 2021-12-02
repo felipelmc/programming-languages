@@ -1,22 +1,11 @@
-{% extends 'reg_log-template.html' %}
+{% extends 'main.html' %}
 {% load static %}
 
-
-
-
-{% block styles %}
-  <link href="{% static 'styles/main.css'%}" rel="stylesheet" />
-{% endblock %}
-
-
-{% block content %}
+{% block body %}
       <div class="container">
         <div class="py-3 text-center"  >
-          <img class="mb-3 d-block mx-auto" src="{% static 'images/logo.png' %}" alt="Match Finder"
-          width="300" height="120" >
-
-          <h2> Registro </h2>
-          <p class="lead" > Preenchar os campos abaixo para fazer parte da Match Finder! </p>
+          <h2>Registro</h2>
+          <p class="lead" > Preencha os campos abaixo para fazer parte da Match Finder! </p>
         </div>
       </div>
 
@@ -124,11 +113,6 @@
 
       </div>
     
-{% endblock %}
+{% endblock body %}
 
-
-
-{% block js %}
-  <link href="{% static 'styles/js/boostrap.bundle.min.js'%}" rel="stylesheet" />
-{% endblock %}
 

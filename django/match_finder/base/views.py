@@ -13,15 +13,14 @@ def perfis(request):
     return render(request, 'base/perfis.html', content)
     
 def perfil_usuario(request):
-    #content = {'name': 'PERFIL USUÁRIO'}
-    return render(request, 'base/perfil_usuario.html')
+    content = {'name': 'PERFIL'}
+    return render(request, 'base/perfil_usuario.html', content)
 
 def projeto(request):
     content = {'name': 'O PROJETO'}
     return render(request, 'base/projeto.html', content)
 
 def registro(request):
-    #content = {'name': 'REGISTRO'}
     return render(request, 'base/registro.html')
 
 def mapa(request):
@@ -33,5 +32,4 @@ def chat(request):
     return render(request, 'base/chat.html', content)
 
 def login(request):
-    #content = {'name': 'LOGIN'}
     return render(request, 'base/login.html')

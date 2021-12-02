@@ -1,39 +1,14 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="css/main.css" rel="stylesheet" />
-    <title>Perfil pessoal</title>
-    <link rel='icon' href='favicon.ico' type='image/x-icon' sizes="32x32" />
-</head>
+{% extends 'main.html' %}
+{% load static %}
+
+{% block body %}
 
 <body>
-    <header>
-        <div class="dropdown">
-            <button class="dropbtn"><img class="logo-app" src="images/logo.png" alt="Match Finder Logo" /></button>
-            <div class="dropdown-content">
-                <a href="index.html">Início</a>
-                <a href="projeto.html">O projeto</a>
-                <a href="mapa.html">Mapa</a>
-                <a href="ranking.html">Ranking</a>
-                <a href="perfis.html">Os desenvolvedores</a>
-            </div>
-        </div>
-        <div class="dropdown" id="div-foto">
-            <button id="button-perfil"><img class="mini-img" src="images/guilherme-circular.png" id="registro" alt="guilherme-circular"></button>
-            <div class="dropdown-content">
-                <a href="perfil-usuario.html">Meu perfil</a>
-                <a href="chat.html">Chat</a>
-            </div>
-        </div>
-    </header>
     
-    <div id="preenchedor"></div>
+
 <h2 style="margin-top: 1%;">Informações Pessoais:</h2>
 <section class="grid-perfil-pessoal">
-    <img class="mini-img2" src="images/guilherme-circular.png" alt="guilhereme guilherme-circular2">
+    <img class="mini-img2" src="{% static 'images/guilherme-circular.png' %}" alt="guilhereme guilherme-circular2">
     <p class="input-group flex-nowrap" id="user">
         <span class="input-group-text" id="addon-wrapping">@</span>
         <input type="text" class="form-control" placeholder="Nome de usuário" aria-label="Nome de usuário" aria-describedby="addon-wrapping">
@@ -89,11 +64,7 @@
     </div>
 </section>
 
-    <footer class="my-5 pt-5 text-muted text-center text-small">
-        <p class="mb-1">&copy; Match Finder - 2021</p>
-    </footer>
-
-<script src="js/boostrap.bundle.min.js"></script>
 
 </body>
-</html>
+
+{% endblock body %}

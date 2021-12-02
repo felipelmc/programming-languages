@@ -1,25 +1,10 @@
-{% extends 'reg_log-template.html' %}
+{% extends 'main.html' %}
 {% load static %}
 
 
-
-{% block head %}
-  <title>Login</title>
-{% endblock %}
-
-
-
-
-{% block styles %}
-  <link href="{% static 'styles/main.css'%}" rel="stylesheet" />
-{% endblock %}
-
-
-{% block content %}
+{% block body %}
   <div class="container">
     <div class="py-3 text-center"  >    
-      <img class="mb-3 d-block mx-auto" src="{% static 'images/logo.png' %}" alt="Match Finder"
-      width="300" height="120" >
 
       <h2> Login </h2>  
     </div>
@@ -57,4 +42,4 @@
 
     
   </div>
-{% endblock %}
+{% endblock body%}
