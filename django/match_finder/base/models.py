@@ -16,7 +16,7 @@ class UsuarioManager(BaseUserManager):
         user.set_password(password)
         user.save(using=self._db)
         return user
-    
+
     def create_superuser(self,username,email,telefone,primeiro_nome,sobrenome,password=None):
         user = self.create_user(
             username=username,
@@ -29,6 +29,7 @@ class UsuarioManager(BaseUserManager):
         user.is_superuser = True
         user.save(using=self._db)
         return user
+
 class Usuario(AbstractBaseUser):
     ip_usuario = models.GenericIPAddressField(max_length=45,null=True,blank=True)
     primeiro_nome = models.CharField(max_length=80, verbose_name='primeiro_nome')
@@ -55,11 +56,3 @@ class Usuario(AbstractBaseUser):
 class Quadra(models.Model):
     tipo = models.CharField(max_length=80)
     rua = models.CharField(max_length=80)
-    CEP = models.IntegerField()
-    cidade = models.CharField(max_length=80)
-    estado = models.CharField(max_length=80)
-    alugada = models.BooleanField(max_length=3)
-    estrelas = models.IntegerField() # 1 - 5
-    valor_hora = models.IntegerField()
-    horario_funcionamento = models.IntegerField()
-    descricao = models.TextField() 

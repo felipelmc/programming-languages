@@ -1,3 +1,4 @@
+from django.contrib.auth.hashers import make_password
 import sqlite3
 
 con = sqlite3.connect('db.sqlite3')
@@ -11,3 +12,6 @@ for row in cur.execute('PRAGMA table_info(base_quadra)'):
     
 cur.close()
 con.close()
+
+pwd = make_password('plain text')
+print('Hashed password is:', pwd)
