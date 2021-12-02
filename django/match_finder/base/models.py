@@ -3,7 +3,7 @@ from django.db import models
 from django.contrib.auth.models import AbstractBaseUser, BaseUserManager, PermissionsMixin
 
 class UsuarioManager(BaseUserManager):
-    def create_user(self,username,email,telefone,primeiro_nome,sobrenome,password=None):
+    def create_user(self, username, email, telefone, primeiro_nome, sobrenome, password=None):
         if not email:
             raise ValueError('O email é obrigatório')
         user = self.model(
@@ -16,6 +16,26 @@ class UsuarioManager(BaseUserManager):
         user.set_password(password)
         user.save(using=self._db)
         return user
+    
+    
+    def update_user(self, ip_usuario, telefone, CEP, cidade, estado, status, esportes_praticados, fav_esport, idade, peso, genero, imagem):
+        user = self.mode(
+            ip_usuario = ip_usuario,
+            telefone = telefone,
+            CEP = CEP,
+            cidade = cidade,
+            estado = estado,
+            status = status,
+            esportes_praticados = esportes_praticados,
+            fav_esport = fav_esport,
+            idade = idade,
+            peso = peso,
+            genero = genero,
+            imagem = imagem
+        )
+        user.save(using = self._db)
+        return user
+        
     
     def create_superuser(self,username,email,telefone,primeiro_nome,sobrenome,password=None):
         user = self.create_user(
