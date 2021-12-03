@@ -32,11 +32,12 @@ header .titulo h1 {
 
 header #cadastro {
   left: 90%;
+  color: white;
 }
 
 header #cadastro #registro {
   margin-bottom: 16px;
-  margin-top: 8px;
+  margin-top: 2px;
 }
 
 header #cadastro button {
@@ -50,8 +51,8 @@ header #cadastro button {
   padding-bottom: 10px;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-size: 18px;
-  text-decoration: none;
   color: white;
+  text-decoration: none;
 }
 
 header #cadastro button:hover {

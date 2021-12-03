@@ -3,17 +3,17 @@
     <div class="dropdown">
         <button class="dropbtn"><img class="logo-app" src="{% static 'images/logo.png' %}" alt="Match Finder Logo" /></button>
         <div class="dropdown-content">
-            <a href="/">Início</a>
-            <a href="/projeto">O projeto</a>
-            <a href="/mapa">Mapa</a>
-            <a href="/ranking">Ranking</a>
-            <a href="/perfis">Os desenvolvedores</a>
+            {% for page in pages %} 
+                <a href="{% url page.url %}"> {{page.name}} </a>
+            {% endfor %}
+            
         </div>
     </div>
     <div class="titulo">  
         <h1>{{ name }}</h1>
     </div>  
     <div id="cadastro">
+        {% now "d/m/Y H:i" %}
         <button id="registro" onclick="window.location='/registro';"> Registro</button>
         <button id="login" onclick="window.location='/login';"> Login</button>
     </div>
