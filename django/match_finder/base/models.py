@@ -2,8 +2,9 @@ from typing_extensions import Required
 from django.db import models
 from django.contrib.auth.models import AbstractBaseUser, BaseUserManager, PermissionsMixin
 
+
 class UsuarioManager(BaseUserManager):
-    def create_user(self, username, email, telefone, primeiro_nome, sobrenome, password=None):
+    def create_user(self, username, email, telefone, primeiro_nome, sobrenome, password=None, **other_fields):
         if not email:
             raise ValueError('O email é obrigatório')
         user = self.model(
@@ -11,7 +12,8 @@ class UsuarioManager(BaseUserManager):
             email=self.normalize_email(email),
             telefone=telefone,
             primeiro_nome=primeiro_nome,
-            sobrenome=sobrenome
+            sobrenome=sobrenome,
+            **other_fields
         )
         user.set_password(password)
         user.save(using=self._db)
@@ -37,7 +39,7 @@ class UsuarioManager(BaseUserManager):
         return user
         
     
-    def create_superuser(self,username,email,telefone,primeiro_nome,sobrenome,password=None):
+    def create_superuser(self,username,email,telefone,primeiro_nome,sobrenome,password=None,**other_fields):
         user = self.create_user(
             username=username,
             email=email,
@@ -47,10 +49,12 @@ class UsuarioManager(BaseUserManager):
             password=password
         )
         user.is_superuser = True
+        user.is_staff = True
+        user.is_staff = True
         user.save(using=self._db)
         return user
     
-class Usuario(AbstractBaseUser):
+class Usuario(AbstractBaseUser,PermissionsMixin):
     ip_usuario = models.GenericIPAddressField(max_length=45,null=True,blank=True)
     primeiro_nome = models.CharField(max_length=80, verbose_name='primeiro_nome')
     sobrenome = models.CharField(max_length=80,verbose_name='sobrenome')
@@ -69,6 +73,7 @@ class Usuario(AbstractBaseUser):
     genero = models.CharField(max_length = 1 ,default=0)
     imagem = models.ImageField(default=None)
     is_superuser = models.BooleanField(default=False)
+    is_staff = models.BooleanField(default=False)
 
     USERNAME_FIELD = 'username'
     REQUIRED_FIELDS = ['primeiro_nome', 'sobrenome', 'email', 'telefone']
@@ -87,3 +92,4 @@ class Quadra(models.Model):
     horario_abertura = models.IntegerField(default=0)
     horario_fechamento = models.IntegerField(default=0)
     descricao = models.TextField(max_length=80) 
+
