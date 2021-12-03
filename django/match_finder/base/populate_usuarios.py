@@ -55,7 +55,8 @@ super_sample
 forms_final
 dados = pd.concat([usuarios, forms_final], axis=1)
 dados.iloc[0]
-# Create your tests here.
+
+
 user = get_user_model()
 for i in range(0, dados.shape[0]):
     input = user.objects.create_user(ip_usuario=dados.iloc[i][0],
@@ -75,3 +76,4 @@ for i in range(0, dados.shape[0]):
         peso=dados.iloc[i][14],
         altura=dados.iloc[i][15],
         genero=dados.iloc[i][16])
+

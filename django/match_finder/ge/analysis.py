@@ -5,7 +5,7 @@ import numpy as np
 import sqlite3
 import random
 
-conn = sqlite3.connect('../db.sqlite3')
+conn = sqlite3.connect('db.sqlite3')
 cur = conn.cursor()
 
 query = '''
@@ -17,3 +17,5 @@ df = pd.read_sql(query, con = conn)
 
 cur.close()
 conn.close()
+
+df.head()
