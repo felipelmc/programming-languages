@@ -37,8 +37,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'ge',
     'base.apps.BaseConfig',
     'imc',
+    'preco_quadras'
 ]
 
 MIDDLEWARE = [
