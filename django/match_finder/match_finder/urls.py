@@ -21,6 +21,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('base.urls')),
     path('ge/', include('ge.urls')),
-    path('imc/', include('imc.urls'))
-    #path('preco_quadras/', include('preco_quadras.urls'))
+    path('imc/', include('imc.urls')),
+    path('preco_quadras/', include('preco_quadras.urls'))
 ]
