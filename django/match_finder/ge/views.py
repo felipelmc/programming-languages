@@ -3,13 +3,13 @@ from django.shortcuts import render
 # Create your views here.
 
 pages = [
-    { 'url': 'index', 'name': "INÍCIO"},
-    { 'url': 'projeto', 'name': "O PROJETO"},
-    { 'url': 'mapa', 'name': "MAPA"},
-    { 'url': 'ranking', 'name': "RANKING"},
-    { 'url': 'perfis', 'name': "DESENVOLVEDORES"},
-    { 'url': 'chat', 'name': "CHAT"},
-    { 'url': 'analises', 'name': "ANÁLISES"},
+    { 'url': 'index', 'name': "Início"},
+    { 'url': 'projeto', 'name': "O projeto"},
+    { 'url': 'mapa', 'name': "Mapa"},
+    { 'url': 'ranking', 'name': "Ranking"},
+    { 'url': 'perfis', 'name': "Desenvolvedores"},
+    { 'url': 'chat', 'name': "Chat"},
+    { 'url': 'analises', 'name': "Análises"},
 ]
 
 content = {'pages': pages}
