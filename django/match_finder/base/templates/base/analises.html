@@ -2,8 +2,27 @@
 {% block body %}
 {% load static %}
 
-<h1>Links das análises.</h1>
+<div class="grid-index">
 
-<h2><a href="{% url 'index-imc' %}">IMC</a></h2>
+    <div class="grid-index-item">
+        <a href="{% url 'index-imc' %}"><p>IMC</p></a>       
+    </div>
+
+    <div class="grid-index-item">
+        <a href="{% url 'index-ge' %}"><p>Esportes Favoritos por Gênero</p></a>       
+    </div>
+
+    <div class="grid-index-item">
+        <a href="{% url 'index-imc' %}"><p>IMC</p></a>       
+    </div>
+
+    <div class="grid-index-item">
+        <a href="{% url 'index-imc' %}"><p>IMC</p></a>       
+    </div>
+
+
+</div>
+
+
 
 {% endblock %}

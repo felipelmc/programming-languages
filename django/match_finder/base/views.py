@@ -1,36 +1,36 @@
 from django.shortcuts import render
 
 pages = [
-    { 'url': 'index', 'name': "INÍCIO"},
-    { 'url': 'projeto', 'name': "O PROJETO"},
-    { 'url': 'mapa', 'name': "MAPA"},
-    { 'url': 'ranking', 'name': "RANKING"},
-    { 'url': 'perfis', 'name': "DESENVOLVEDORES"},
-    { 'url': 'chat', 'name': "CHAT"},
-    { 'url': 'analises', 'name': "ANÁLISES"},
+    { 'url': 'index', 'name': "Início"},
+    { 'url': 'projeto', 'name': "O projeto"},
+    { 'url': 'mapa', 'name': "Mapa"},
+    { 'url': 'ranking', 'name': "Ranking"},
+    { 'url': 'perfis', 'name': "Desenvolvedores"},
+    { 'url': 'chat', 'name': "Chat"},
+    { 'url': 'analises', 'name': "Análises"},
 ]
 
 content = {'pages': pages}
 
 
 def ranking(request):
-    content['name'] = 'RANKING'
+    content['name'] = 'Ranking'
     return render(request, 'base/ranking.html', content)
 
 def index(request):
-    content['name'] = 'INÍCIO'
+    content['name'] = 'Início'
     return render(request, 'base/index.html', content)
 
 def perfis(request):
-    content['name'] = 'DESENVOLVEDORES'
+    content['name'] = 'Desenvolvedores'
     return render(request, 'base/perfis.html', content)
     
 def perfil_usuario(request):
-    content['name'] = 'PERFIL'
+    content['name'] = 'Perfil'
     return render(request, 'base/perfil_usuario.html', content)
 
 def projeto(request):
-    content['name'] = 'O PROJETO'
+    content['name'] = 'O projeto'
     return render(request, 'base/projeto.html', content)
 
 def registro(request):
@@ -38,11 +38,11 @@ def registro(request):
     return render(request, 'base/registro.html', content)
 
 def mapa(request):
-    content['name'] = 'MAPA'
+    content['name'] = 'Mapa'
     return render(request, 'base/mapa.html', content)
 
 def chat(request):
-    content['name'] = 'CHAT'
+    content['name'] = 'Chat'
     return render(request, 'base/chat.html', content)
 
 def login(request):
@@ -50,5 +50,5 @@ def login(request):
     return render(request, 'base/login.html', content)
 
 def analises(request):
-    content['name'] = 'ANÁLISES'
+    content['name'] = 'Análises'
     return render(request, 'base/analises.html', content)
