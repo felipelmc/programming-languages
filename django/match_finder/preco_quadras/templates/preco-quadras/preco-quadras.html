@@ -11,21 +11,43 @@ o número de quadras oferecido para cada esporte é semelhante? Vejamos:
 </div>
 
 <p>
-   Note que o número de quadras de Handebol se destaca. Por outro lado, o número de quadras de Futebol e Basquete são praticamente iguais, e a mesma situação
+   Note que o número de quadras de Handebol se destaca, com quase 15 unidades a mais que o esporte com menor número de quadras. Por outro lado, o número de quadras de Futebol e Basquete são praticamente iguais, e a mesma situação
    ocorre quando se trata de Futsal e Vôlei.
 </p>
 
+<h2>Mais importante do que o número de quadras é, na verdade, o cruzamento dessa informação com a descrição de cada uma. Isso pode evidenciar, na prática, uma série de informações
+   a respeito das demandas dos jogadores, supondo que os locadores atendam às demandas dos clientes: 
+</h2>
+
+<div>
+   {{ desc_quadras | safe}}
+</div>
+
+<p>
+   É imediato notar que as quadras de Futebol se destacam pela oferta de cerveja gelada. É verdade que o mesmo ocorre nas quadras de Basquete, mas de forma menos expressiva. De fato, é possível supor que jogares de futebol tenham 
+   uma demanda maior por cerveja após as partidas do que os jogadores de outros esportes. No caso do Handebol, por exemplo, os locadores de quadras tendem a ver mais importância em ofertar espaços fechados (o que é verdadeiramente importante em esportes desse tipo, inclusive para resguardar a integridade física
+   dos jogadores) e com bom-custo benefício.
+</p>
+
+<h2>
+   Além disso, outra pergunta importante é se existe algum esporte para o qual o aluguel de quadras é mais caro. E, nesse caso, também podemos nos perguntar se existe algum grau desse fato e a média de estrelas das quadras. Vejamos a partir da análise dos dois gráficos a seguir:
+</h2>
+
    <div>
-      {{ valor_estado | safe}}
+      {{ valor_esportes | safe}}
    </div>
 
    <div>
-      {{ estrela_estado | safe}}
+      {{ estrela_esportes | safe}}
    </div>
 
-   <div>
-      {{ desc_quadras | safe}}
-   </div>
+<p>
+   Note que o valor médio da hora é mais caro no Vôlei e, de fato, o número médio de estrelas das quadras também é maior nesse esporte. No caso do Futsal, por outro lado, a média dos preços é a segunda maior, apesar de ter a pior média nas avaliações dos usuários.
+   Outro ponto importante a se notar, inclusive, é que a média de estrelas é baixa em todos os esportes: sabendo que o máximo de estrelas é 5, mesmo a média mais alta (do Vôlei) é somente um pouco mais da metade. Ao mesmo tempo nota-se que o valor médio do aluguel é alto
+   em todos os esportes, já que o valor mínimo de aluguel é de 5.
+   É possível inferir, na prática, que o serviço de aluguel de quadras no cenário apontado pelo DataFrame em questão é inflacionado, e o custo-benefício é baixo em geral: afinal, o custo médio é alto e o número médio de estrelas é baixo.
+</p>
+
 
 
 {% endblock %}
