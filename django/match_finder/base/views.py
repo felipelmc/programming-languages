@@ -7,6 +7,7 @@ pages = [
     { 'url': 'ranking', 'name': "RANKING"},
     { 'url': 'perfis', 'name': "DESENVOLVEDORES"},
     { 'url': 'chat', 'name': "CHAT"},
+    { 'url': 'analises', 'name': "ANÁLISES"},
 ]
 
 content = {'pages': pages}
@@ -47,3 +48,7 @@ def chat(request):
 def login(request):
     content['name'] = ''
     return render(request, 'base/login.html', content)
+
+def analises(request):
+    content['name'] = 'ANÁLISES'
+    return render(request, 'base/analises.html', content)
