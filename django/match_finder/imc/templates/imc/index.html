@@ -2,6 +2,16 @@
 {% block body %}
 {% load static %}
 
-<h1>Meus gráficos aqui</h1>
+<h2>Conhecendo a importância da prática esportiva para a saúde, nos perguntamos qual o melhor esporte a ser praticado? Essa pergunta é muita subjetiva e diversas análises podem ser feitas. Um dos princípais indíces utilizados para avaliar a questão física é o IMC - Índice de Massa Corpórea. Com isso em mente, nos perguntamos: "Qual esporte possui maior influência na redução do IMC?"</h2>
+
+<p>Para responder essa pergunta levamos em conta nosso banco de dados dos usuários esportistas. Utilizaremos os valores de peso e altura para o cálculo do IMC e analisaremos de acordo com seu esporte favorito. Também faremos uma distinção por gênero tendo em vista que a forma do corpo se diferencia bastante entre os gêneros, além dos seus gostos nos esportes. <br>
+Com acesso aos nossos dados podemos gerar o gráfico apresentado abaixo que mostra o IMC médio dos usuários de acordo com seu esporte favorito, e assim podemos tirar algumas conclusões.</p>
+
+<img class="grafico" src="{% static 'images/grafico-imc.png' %}" alt="gráfico imc"/>
+
+<p><br>
+Visto o gráfico, percebemos que em geral o IMC dos homens é levemente maior que o das mulheres, o que reforça nossa opção por separar entre os gêneros. Além disso, percebemos que o Futsal é o esporte que apresenta menor nível de IMC para ambos os sexos, sendo portanto nossa principal resposta para a pergunta. <br>
+Mas não precisamos parar por aí, podemos ver também que Handebol e Vôlei são os esportes com maiores niveis de IMC e curiosamente são esportes com foco nas habilidades com as mãos, exigindo, portanto, menos das pernas. <br>
+Visto isso, podemos ter uma ideia melhor de quais esportes são melhores para reduzir o IMC e atingir o peso ideal de maneira mais efetiva. Contudo, reforçamos que qualquer esporte tem essa capacidade e muito mais importante do que se forçar a praticar o possível melhor esporte é conseguir se encontrar feliz praticando o esporte que mais gosta!</p>
 
 {% endblock %}

@@ -571,4 +571,11 @@ tr.terceiro {
   margin-right: 20px;
   border-radius: 10px;
 }
+
+/* imc */
+.grafico {
+  position: relative;
+  left: 34%;
+  width: 500px;
+}
 /*# sourceMappingURL=prop-especificas.css.map */
