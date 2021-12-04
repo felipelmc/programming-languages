@@ -1,0 +1,31 @@
+{% extends "main.html" %}
+{% block body %}
+{% load static %}
+
+<h2>Algumas questões surgem quando pensamos na divisão das quadras. Em primeiro lugar, devemos pensar a respeito da distribuição delas: 
+o número de quadras oferecido para cada esporte é semelhante? Vejamos:
+</h2>
+
+<div>
+   {{ n_quadras | safe}}
+</div>
+
+<p>
+   Note que o número de quadras de Handebol se destaca. Por outro lado, o número de quadras de Futebol e Basquete são praticamente iguais, e a mesma situação
+   ocorre quando se trata de Futsal e Vôlei.
+</p>
+
+   <div>
+      {{ valor_estado | safe}}
+   </div>
+
+   <div>
+      {{ estrela_estado | safe}}
+   </div>
+
+   <div>
+      {{ desc_quadras | safe}}
+   </div>
+
+
+{% endblock %}
