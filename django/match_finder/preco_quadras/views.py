@@ -37,14 +37,21 @@ def felipe(request):
     fig, ax = plt.subplots(figsize = (7, 5))
 
     sns.barplot(data = agrupado.sort_values(by = 'valor_hora', ascending = False),
-                y = 'tipo', x = 'valor_hora',
+                x = 'valor_hora', y = 'tipo',
                 color = 'orange',
                 ax = ax)
 
     ax.set(title = "Valor médio da hora do aluguel de quadras por esporte",
             xlabel = "Valor médio",
             ylabel = "Esporte")
-
+    
+    agrupado[['tipo', 'valor_hora']].sort_values(by = 'valor_hora', ascending = False)['tipo']
+    tupla = tuple(agrupado[['tipo', 'valor_hora']].sort_values(by = 'valor_hora', ascending = False)['tipo'])
+    ax.set_yticklabels(tupla)
+    ax.set_yticks(range(0,len(tupla)))
+    
+    plt.tight_layout()
+    
     valor_esportes = mpld3.fig_to_html(fig)
     
     # plot 2
@@ -59,7 +66,14 @@ def felipe(request):
        xlabel = "Média de estrelas",
        ylabel = "Esporte")
     
+    tupla = tuple(agrupado[['tipo', 'estrelas']].sort_values(by = 'estrelas', ascending = False)['tipo'])
+    ax.set_yticklabels(tupla)
+    ax.set_yticks(range(0,len(tupla)))
+    
+    plt.tight_layout()
+    
     estrela_esportes = mpld3.fig_to_html(fig)
+    
     
     #plot 3
     fig, ax = plt.subplots(figsize = (7, 5))
@@ -72,6 +86,10 @@ def felipe(request):
     ax.set(title = "Quantidade de quadras para cada esporte",
             xlabel = "Esporte",
             ylabel = "n")
+    
+    tupla = tuple(flt['tipo'].value_counts().to_frame().reset_index()['index'])
+    ax.set_xticklabels(tupla)
+    ax.set_xticks(range(0,len(tupla)))
 
     n_quadras = mpld3.fig_to_html(fig)
     
@@ -86,6 +104,9 @@ def felipe(request):
     ax.set(title = "Descrição das quadras para cada esporte",
        xlabel = "Esporte",
        ylabel = "n")    
+    
+    ax.set_xticklabels(tupla[::-1])
+    ax.set_xticks(range(0,len(tupla)))
     
     desc_quadras = mpld3.fig_to_html(fig)
     
