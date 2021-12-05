@@ -51,15 +51,12 @@ def guilherme(request):
     ax.set(title = "Esporte favorito: Basquete",
             xlabel = "Outros esportes praticados",
             ylabel = "Praticantes")
-    ax.set_xticklabels(tupla)
-    ax.set_xticks(range(0,len(tupla)))
+
     basq = mpld3.fig_to_html(fig)
 
     fig, ax = plt.subplots(figsize = (8, 6))
     df.loc[df['fav_esport'] == 'Futebol'].sum().drop('fav_esport').plot(kind='bar')
-    ax.set_xticklabels(tupla)
-    ax.set_xticks(range(0,len(tupla)))
-        
+
     ax.set(title = "Esporte favorito: Futebol",
             xlabel = "Outros esportes praticados",
             ylabel = "Praticantes")
@@ -70,8 +67,7 @@ def guilherme(request):
     ax.set(title = "Esporte favorito: Futsal",
             xlabel = "Outros esportes praticados",
             ylabel = "Praticantes")
-    ax.set_xticklabels(tupla)
-    ax.set_xticks(range(0,len(tupla)))
+
     futsal = mpld3.fig_to_html(fig)
 
     fig, ax = plt.subplots(figsize = (8, 6))
@@ -79,8 +75,7 @@ def guilherme(request):
     ax.set(title = "Esporte favorito: Handebol",
             xlabel = "Outros esportes praticados",
             ylabel = "Praticantes")
-    ax.set_xticklabels(tupla)
-    ax.set_xticks(range(0,len(tupla)))
+
     hand = mpld3.fig_to_html(fig)
 
     fig, ax = plt.subplots(figsize = (8, 6))
@@ -88,14 +83,12 @@ def guilherme(request):
     ax.set(title = "Esporte favorito: Outros",
             xlabel = "Outros esportes praticados",
             ylabel = "Praticantes")
-    ax.set_xticklabels(tupla)
-    ax.set_xticks(range(0,len(tupla)))
+
     outros = mpld3.fig_to_html(fig)
 
     fig, ax = plt.subplots(figsize = (8, 6))
     df.loc[df['fav_esport'] == 'Vôlei'].sum().drop('fav_esport').plot(kind='bar') 
-    ax.set_xticklabels(tupla)
-    ax.set_xticks(range(0,len(tupla)))
+
     ax.set(title = "Esporte favorito: Volêi",
             xlabel = "Outros esportes praticados",
             ylabel = "Praticantes")
