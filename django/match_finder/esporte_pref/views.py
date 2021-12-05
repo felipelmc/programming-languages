@@ -105,6 +105,7 @@ def guilherme(request):
 
 
     content = {
+    "pages": pages,
     "fut": fut,
     "futsal" : futsal,
     "hand" : hand,
@@ -112,5 +113,6 @@ def guilherme(request):
     "volei": volei
     }
     
-    content['name'] = 'Preferencias'
+    content['name'] = 'Preferências'
+
     return render(request, 'esporte_pref/esporte-pref.html', content)
