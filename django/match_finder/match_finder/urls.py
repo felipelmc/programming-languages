@@ -22,5 +22,6 @@ urlpatterns = [
     path('', include('base.urls')),
     path('ge/', include('ge.urls')),
     path('imc/', include('imc.urls')),
-    path('preco_quadras/', include('preco_quadras.urls'))
+    path('preco_quadras/', include('preco_quadras.urls')),
+    path('esporte_pref/', include('esporte_pref.urls')),
 ]

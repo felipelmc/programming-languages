@@ -40,7 +40,8 @@ INSTALLED_APPS = [
     'ge',
     'base.apps.BaseConfig',
     'imc',
-    'preco_quadras'
+    'preco_quadras',
+    'esporte_pref',
 ]
 
 MIDDLEWARE = [

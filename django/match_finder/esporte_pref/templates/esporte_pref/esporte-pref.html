@@ -1,0 +1,40 @@
+{% extends "main.html" %}
+{% block body %}
+{% load static %}
+
+<div id='guilherme'>
+
+<h2>O foco de análise é a variedade de esportes praticados baseado no esporte favorito do entrevistado, os dados foram coletados entre estudantes de faculdade com idades em torno de 20 anos e generalizados para atingir uma quantidade suficiente para análise, portanto teremos viés nos dados.
+</h2>
+
+<div>
+   {{ fut| safe}}
+</div>
+
+<h4>
+   Observa-se inicialmente uma grande adesão a esportes diversos entre os jogadores de futebol.
+</h4>
+
+<h2>Essa adesão no entanto não é observada nos outros esportes, que possuem adesão baixafora do favorito.
+</h2>
+
+<div>
+   {{ hand | safe}}
+</div>
+<div>
+   {{ basq | safe}}
+</div>
+
+<div>
+   {{ futsal | safe}}
+</div>
+
+<div>
+   {{ volei | safe}}
+</div>
+<h2>
+   Por fim temos outros, que representam em sua maioria praticantes de nenhum esporte, observa-se o comportamento, novamente, da não pratíca de outras modalidades.
+<div>
+   {{ outros | safe}}
+</div>
+{% endblock %}
